@@ -1,0 +1,349 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_amazon_spapi
+# 
+# Translators:
+# Martin Trigaux, 2022
+# Noma Yuki, 2022
+# Yoshi Tashiro (Quartile) <tashiro@roomsfor.hk>, 2022
+# Ryoko Tsuda <ryoko@quartile.co>, 2023
+# Junko Augias, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-06 12:46+0000\n"
+"PO-Revision-Date: 2022-06-10 15:35+0000\n"
+"Last-Translator: Junko Augias, 2023\n"
+"Language-Team: Japanese (https://app.transifex.com/odoo/teams/41243/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__aws_access_key
+msgid "AWS Access Key"
+msgstr "AWSアクセスキー"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__aws_secret_key
+msgid "AWS Secret Key"
+msgstr "AWSシークレットキー"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__aws_session_token
+msgid "AWS Session Token"
+msgstr "AWSセッショントークン"
+
+#. module: sale_amazon_spapi
+#: model:ir.model,name:sale_amazon_spapi.model_amazon_account
+msgid "Amazon Account"
+msgstr "Amazonアカウント"
+
+#. module: sale_amazon_spapi
+#: model:ir.model,name:sale_amazon_spapi.model_amazon_marketplace
+msgid "Amazon Marketplace"
+msgstr "Amazonマーケットプレイス"
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.authorization_error
+msgid "An error occurred"
+msgstr "エラー発生"
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.authorization_error
+msgid "An error occurred while linking your account with Amazon."
+msgstr "お客様のアカウントをAmazon同期中にエラーが発生しました。"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__auth_token
+msgid "Authorization Token"
+msgstr ""
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.authorization_error
+msgid "Back to my account"
+msgstr "マイアカウントに戻る"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_marketplace__code
+msgid "Code"
+msgstr "コード"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid "Could not establish the connection to the API."
+msgstr "APIと接続できませんでした。"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid "Could not establish the connection to the feed URL."
+msgstr "フィードURLとの連携を確立できませんでした。"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid "Could not establish the connection to the proxy."
+msgstr "プロキシへの接続を確立できませんでした。"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/controllers/onboarding.py:0
+#, python-format
+msgid "Could not find Amazon account with id %s"
+msgstr "Amazonアカウントid %sが見つかりませんでした。"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_marketplace__domain
+msgid "Domain"
+msgstr "ドメイン"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid "Error code: %s; description: %s"
+msgstr "エラーコード：%s; 説明： %s"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields.selection,name:sale_amazon_spapi.selection__amazon_marketplace__region__eu-west-1
+msgid "Europe"
+msgstr "ヨーロッパ"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields.selection,name:sale_amazon_spapi.selection__amazon_marketplace__region__us-west-2
+msgid "Far East"
+msgstr "極東"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/models/amazon_account.py:0
+#, python-format
+msgid ""
+"Gift message:\n"
+"%s"
+msgstr ""
+"ギフトメッセージ：\n"
+"%s"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__access_token
+msgid "LWA Access Token"
+msgstr "LWAアクセストークン"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__refresh_token
+msgid "LWA Refresh Token"
+msgstr "LWAリフレッシュトークン"
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.amazon_account_view_form_inherit
+msgid "Link with Amazon"
+msgstr "Amazonとリンク"
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.amazon_account_view_form_inherit
+msgid ""
+"Link your Amazon account with Odoo to start synchronizing your Amazon "
+"orders."
+msgstr ""
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields.selection,name:sale_amazon_spapi.selection__amazon_marketplace__region__us-east-1
+msgid "North America"
+msgstr "北アメリカ"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_marketplace__region
+msgid "Region"
+msgstr "領域"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__restricted_data_token
+msgid "Restricted Data Token"
+msgstr "制限されたデータトークン"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_marketplace__seller_central_url
+msgid "Seller Central URL"
+msgstr "Seller Central URL"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__seller_key
+msgid "Seller ID"
+msgstr ""
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/models/amazon_account.py:0
+#, python-format
+msgid "Successfully updated the marketplaces available to this account!"
+msgstr "このアカウントで利用可能なマーケットプレイスの更新に成功しました！"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_marketplace__region
+msgid ""
+"The Amazon region of the marketplace. Please refer to the Selling Partner "
+"API documentation to find the correct region."
+msgstr ""
+"マーケットプレイスのAmazonリージョン。正しいリージョンを見つけるには、Selling Partner APIドキュメントを参照してください。"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__auth_token
+msgid ""
+"The MWS Authorization Token of the Amazon Seller Central account for Odoo"
+msgstr ""
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__seller_key
+msgid "The Merchant ID of the Amazon Seller Central account"
+msgstr ""
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_marketplace__seller_central_url
+msgid "The Seller Central URL"
+msgstr ""
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid "The communication with the API failed."
+msgstr "APIとのやり取りに失敗しました。"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid ""
+"The communication with the API failed.\n"
+"Error code: %s; description: %s"
+msgstr ""
+"APIとのやり取りに失敗しました。\n"
+"エラーコード： %s； 詳細： %s"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_marketplace__code
+msgid "The country code in ISO 3166-1 format"
+msgstr ""
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_marketplace__domain
+msgid "The domain name associated with the marketplace"
+msgstr ""
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__refresh_token
+msgid "The long-lived token that can be exchanged for a new access token."
+msgstr "新しいアクセストークンと交換可能な、有効期限の長いトークン。"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__aws_credentials_expiry
+msgid "The moment at which the AWS credentials become invalid."
+msgstr "AWS 認証情報が無効になる瞬間。"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__restricted_data_token_expiry
+msgid "The moment at which the Restricted Data Token becomes invalid."
+msgstr "制限されたデータトークンが無効になる瞬間。"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__access_token_expiry
+msgid "The moment at which the token becomes invalid."
+msgstr "トークンが無効になる瞬間。"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__aws_access_key
+msgid "The short-lived key used to identify the assumed ARN role on AWS."
+msgstr "AWS上で想定されるARNロールを識別するために使用される短命のキー。"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__aws_secret_key
+msgid ""
+"The short-lived key used to verify the access to the assumed ARN role on "
+"AWS."
+msgstr "AWS上で想定されるARNロールのアクセスを検証するために使用される短命のキー。"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__restricted_data_token
+msgid ""
+"The short-lived token used instead of the LWA Access Token to access "
+"restricted data"
+msgstr "制限されたデータにアクセスするために、LWAアクセストークンの代わりに使用される短命トークン。"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__access_token
+msgid "The short-lived token used to query Amazon API on behalf of a seller."
+msgstr "出品者に代わってAmazon APIをクエリするために使用される短命なトークン。"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__aws_session_token
+msgid ""
+"The short-lived token used to query the SP-API with the assumed ARN role on "
+"AWS."
+msgstr "AWS上で想定されるARNロールでSP-APIにクエリーを行うために使用される短命トークン。"
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.amazon_account_view_form_inherit
+msgid ""
+"This action will disconnect your account with Amazon and cannot be"
+"                                  undone. Are you sure you want to proceed?"
+msgstr ""
+
+#. module: sale_amazon_spapi
+#: model:ir.model,name:sale_amazon_spapi.model_stock_picking
+msgid "Transfer"
+msgstr "運送"
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.amazon_account_view_form_inherit
+msgid "Unlink account"
+msgstr "アカウントのリンク解除"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid "You first need to authorize the Amazon account %s."
+msgstr "まずAmazonアカウント%sを許可する必要があります。"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid ""
+"You first need to set the marketplaces to synchronize for the Amazon account"
+" %s."
+msgstr "まずマーケットプレイスをAmazonアカウント%sと同期するよう設定する必要があります。"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/models/amazon_account.py:0
+#, python-format
+msgid ""
+"You reached the maximum number of requests for this operation; please try "
+"again later."
+msgstr "この操作のリクエスト数が上限に達しました。後ほどもう一度試して下さい。"
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.amazon_account_view_form_inherit
+msgid "Your Amazon account is linked with Odoo."
+msgstr "AmazonアカウントがOdooにリンクされています。"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/models/amazon_account.py:0
+#, python-format
+msgid ""
+"[%s] %s\n"
+"Condition: %s - %s"
+msgstr ""
+"[%s] %s\n"
+"条件：%s - %s"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/models/amazon_account.py:0
+#, python-format
+msgid "[%s] Delivery Charges for %s"
+msgstr "[%s] 以下の配送料 %s"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/models/amazon_account.py:0
+#, python-format
+msgid "[%s] Gift Wrapping Charges for %s"
+msgstr "[%s] 以下のためのギフトラッピング代金 %s"

@@ -1,0 +1,2587 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_be_coda
+# 
+# Translators:
+# Martin Trigaux, 2022
+# Cécile Collart <cco@odoo.com>, 2022
+# Christophe Klopfert, 2022
+# Jolien De Paepe, 2022
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-08 11:15+0000\n"
+"PO-Revision-Date: 2022-04-08 12:42+0000\n"
+"Last-Translator: Jolien De Paepe, 2022\n"
+"Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: fr\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid ""
+"\n"
+"Movement data records of type 2.%s are not supported "
+msgstr ""
+"\n"
+"Les enregistrements de données mouvement de type 2.%s ne sont pas supportés"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "1-st (recurrent)"
+msgstr "1er (récurrent)"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "ATM/POS debit"
+msgstr "Débit ATM/POS"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Access right to database"
+msgstr "Droit d'accès banque de données"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Agio on supplier's bill"
+msgstr "Agios sur effet-fournisseur"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Amount as totalised by the bank"
+msgstr "Montant globalisé par la banque"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Amount as totalised by the customer"
+msgstr "Montant globalisé par le client"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Avgas"
+msgstr "Avgas"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Bancontact/Mister Cash"
+msgstr "Bancontact/Mister Cash"
+
+#. module: l10n_be_coda
+#: model:ir.model,name:l10n_be_coda.model_account_bank_statement
+msgid "Bank Statement"
+msgstr "Relevé bancaire"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Bank confirmation to revisor or accountant"
+msgstr "Confirmation de la banque au réviseur ou au comptable"
+
+#. module: l10n_be_coda
+#: model_terms:ir.ui.view,arch_db:l10n_be_coda.account_bank_statement_import_coda
+msgid "Belgium Coded Statement of Account (CODA)"
+msgstr "Extrait de compte codifié belge (CODA)"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Bill claimed back"
+msgstr "Effet demandé en retour"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Bills - calculation of interest"
+msgstr "Effets - calcul de l'intérêt"
+
+#. module: l10n_be_coda
+#: model:ir.model.fields,field_description:l10n_be_coda.field_account_bank_statement__coda_note
+#: model_terms:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_coda_form
+msgid "CODA Notes"
+msgstr "Notes CODA"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "CODA V%s statements are not supported, please contact your bank"
+msgstr ""
+"Les relevés au format CODA V%s ne sont pas pris en charge, contactez votre "
+"banque"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid ""
+"CODA parsing error on information data record 3.2, seq nr %s! Please report "
+"this issue via your Odoo support channel."
+msgstr ""
+"Erreur de parsing du CODA sur l'enregistrement de données information 3.2, "
+"n° de séquence %s! Merci de rapporter ce problème via votre canal de soutien"
+" Odoo."
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid ""
+"CODA parsing error on information data record 3.3, seq nr %s! Please report "
+"this issue via your Odoo support channel."
+msgstr ""
+"Erreur de parsing du CODA sur l'enregistrement de données information 3.3, "
+"n° de séquence %s! Merci de rapporter ce problème au support Odoo."
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid ""
+"CODA parsing error on movement data record 2.2, seq nr %s! Please report "
+"this issue via your Odoo support channel."
+msgstr ""
+"Erreur de parsing du CODA sur l'enregistrement de données information 2.2, "
+"n° de séquence %s! Merci de rapporter ce problème au support Odoo."
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid ""
+"CODA parsing error on movement data record 2.3, seq nr %s! Please report "
+"this issue via your Odoo support channel."
+msgstr ""
+"Erreur de parsing CODA sur l'enregistrement de données mouvement 2.3, n° de "
+"séquence %s! Merci de rapporter ce problème au support Odoo."
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Cancellation or correction"
+msgstr "Annulation ou correction"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Capital and/or interest term investment"
+msgstr "Capital et/ou intérêts placements à terme"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Cards"
+msgstr "Cartes"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Cash deposit at an ATM"
+msgstr "Versement d'argent à un guichet automatique"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Cash payment"
+msgstr "Versement en espèces"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Cash withdrawal"
+msgstr "Retrait en espèces"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Cash withdrawal by your branch or agents"
+msgstr "Retrait d'argent par votre succursale/vos agents"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Cash withdrawal from an ATM"
+msgstr "Retrait d'ragent via guichet automatique"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Charge for safe custody"
+msgstr "Droit de garde"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Charging fees for transactions"
+msgstr "Tarification d'opérations"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Cheque-related costs"
+msgstr "Frais liés aux chèques"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Cheques"
+msgstr "Chèques"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Closing"
+msgstr "Clôture"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Closing (periodical settlements for interest, costs,...)"
+msgstr "Clôture (clôtures périodiques d'intérêts, frais, etc.)"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Codes proper to each bank"
+msgstr "Codes propres à chaque banque"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Collective payments of wages"
+msgstr "Paiements de salaires collectifs"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Collective transfer"
+msgstr "Virement collectif"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Collective transfers"
+msgstr "Virements collectifs"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Commercial bills"
+msgstr "Effets de commerce"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Commercial paper claimed back"
+msgstr "Effet demandé en retour"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Communication"
+msgstr "Communication"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Communication: "
+msgstr "Communication :"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Communicaton"
+msgstr "Communication"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Compensation for missing coupon"
+msgstr "Indemnité pour coupon manquant"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Correction for prepaid card"
+msgstr "Correction pour une carte prépayée"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Costs"
+msgstr "Frais"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Costs for holding a documentary cash credit"
+msgstr "Coûts de la tenue d'une lettre de crédit"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Costs for opening a bank guarantee"
+msgstr "Frais d'ouverture d'une garantie bancaire"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Costs for the safe custody of correspondence"
+msgstr "Frais de garde de correspondance"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Costs related to commercial paper"
+msgstr "Frais en rapport avec l'effet de commerce"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Costs relating to electronic output"
+msgstr "Frais output électronique"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Costs relating to incoming foreign and non-SEPA transfers"
+msgstr "Frais relatifs aux virements internationaux, non SEPA, entrants"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Costs relating to outgoing foreign transfers and non-SEPA transfers"
+msgstr "Frais relatifs aux virements internationaux, non SEPA, sortants"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Costs relating to payment of foreign cheques"
+msgstr "Frais en rapport avec le paiement des chèques étrangers"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Costs relating to the payment of a foreign bill"
+msgstr "Frais en rapport avec le paiement de l'effet étranger"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Counter Party"
+msgstr "Contrepartie"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Counter Party Account"
+msgstr "Compte contrepartie"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Counter Party Address"
+msgstr "Adresse de la contrepartie"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Counter transactions"
+msgstr "Opérations de guichet"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Country code of the principal"
+msgstr "Code-pays du donneur d'ordre"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Credit"
+msgstr "Crédit"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Credit after Proton payments"
+msgstr "Crédits de paiements via Proton"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Credit after a payment at a terminal"
+msgstr "Crédit d'un paiement via terminal"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Credit after collection"
+msgstr "Crédit après encaissement"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Credit under usual reserve"
+msgstr "Crédit sauf bonne fin"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Credit-related costs"
+msgstr "Frais en rapport avec les crédits"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Creditor’s identification code"
+msgstr "Code d'identification du créditeur"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Currency"
+msgstr "Devise"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Damage relating to bills and cheques"
+msgstr "Dommages effets et chèques"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Department store cheque"
+msgstr "Chèque magasin"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Detail"
+msgstr "Détail"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Detail of Amount as totalised by the bank"
+msgstr "Détails du montant globalisé par la banque"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Detail of Amount as totalised by the customer"
+msgstr "Détails du montant globalisé par le client"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Detail of Simple amount with detailed data"
+msgstr "Détails du montant simple avec détails"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Difference in payment"
+msgstr "Différence de versement"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Direct Debit scheme"
+msgstr "Schéma Direct Debit"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Direct debit"
+msgstr "Direct debit"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Discount abroad"
+msgstr "Escompte étranger"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Discount foreign supplier's bills"
+msgstr "Escompte effet fournisseur étranger"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Documentary credit charges"
+msgstr "Frais de crédit documentaire"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Documentary export credits"
+msgstr "Crédits documentaires exportation"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Documentary import credits"
+msgstr "Crédit documentaires importation"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Domestic commercial paper"
+msgstr "Effets de commerce nationaux"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Domestic or local SEPA credit transfers"
+msgstr "Virements nationaux/locaux - SEPA credit transfers"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Download of prepaid card"
+msgstr "Déchargement d'une carte prépayée"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Drawing up a certificate"
+msgstr "Confection attestation"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Equivalent in EUR"
+msgstr "Contre-valeur en euros"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Error"
+msgstr "Erreur"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Extension"
+msgstr "Prorogation"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Extension of maturity date"
+msgstr "Prorogation d'échéance"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Fees and commissions"
+msgstr "Frais et commissions"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Financial centralisation"
+msgstr "Centralisation financière"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Financial centralisation (credit)"
+msgstr "Centralisation financière (crédit)"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Financial centralisation (debit)"
+msgstr "Centralisation financière (débit)"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Financial centralization"
+msgstr "Centralisation financière"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid ""
+"First credit of cheques, vouchers, luncheon vouchers, postal orders, credit "
+"under usual reserve"
+msgstr ""
+"Premier crédit de chèques, bons, chèques repas, assignations postales, "
+"crédit sauf bonne fin"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Fixed advance – capital and interest"
+msgstr "Avance fixe - capital et intérêts"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Fixed advance – interest only"
+msgstr "Avance à terme fixe - intérêts uniquement"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Foreign bank accounts with BBAN structure are not supported "
+msgstr ""
+"Les comptes étrangers avec une structure BBAN ne sont pas pris en charge"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Foreign bank accounts with IBAN structure are not supported "
+msgstr ""
+"Les comptes étrangers avec une structure IBAN ne sont pas pris en charge"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Foreign cheques"
+msgstr "Chèques étrangers"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Foreign commercial paper"
+msgstr "Effet de commerce étranger"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Forward purchase of foreign exchange"
+msgstr "Achat de devises à terme"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Forward sale of foreign exchange"
+msgstr "Vente de devises à terme"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Gross amount in the currency of the account"
+msgstr "Montant brut dans la devise du compte"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Gross amount in the original currency"
+msgstr "Montant brut dans la devise initiale"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Handling costs instalment credit"
+msgstr "Frais dossier crédit à tempérament"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Idem without guarantee"
+msgstr "Idem sans aval"
+
+#. module: l10n_be_coda
+#: model:ir.model,name:l10n_be_coda.model_account_bank_statement_import
+msgid "Import Bank Statement"
+msgstr "Import d'un relevé bancaire"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Income from payments by GSM"
+msgstr "Revenu des paiements par GSM"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Individual transfer order"
+msgstr "Virement simple"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Individual transfer order initiated by the bank"
+msgstr "Virement simple initié par la banque"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Information charges"
+msgstr "Frais de renseignements"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Instant SEPA credit transfer"
+msgstr "Virement SEPA instantané"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Insurance costs"
+msgstr "Frais d'assurance"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Interest term investment"
+msgstr "Intérêts placement à terme"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Interim interest on subscription"
+msgstr "Intérêts intérimaires en cas de souscription"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "International credit transfers - non-SEPA credit transfers"
+msgstr "Virements internationaux - non-SEPA credit tranfers"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Issues"
+msgstr "Émissions"
+
+#. module: l10n_be_coda
+#: model:ir.model,name:l10n_be_coda.model_account_journal
+msgid "Journal"
+msgstr "Journal"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "LPG"
+msgstr "LPG"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Loading GSM cards"
+msgstr "Chargement cartes GSM"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Loading Proton"
+msgstr "Chargement Proton"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Loading a GSM card"
+msgstr "Chargement carte GSM"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Long-term loan"
+msgstr "Prêt à long terme"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Maestro"
+msgstr "Maestro"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Management fee"
+msgstr "Frais de gestion"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Management/custody"
+msgstr "Gestion/garde"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Mandate reference"
+msgstr "Mandat référence"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Masked PAN or card number"
+msgstr "PAN ou numéro de la carte masqué"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid ""
+"Method of calculation (VAT, withholding tax on income, commission, etc.)"
+msgstr "Mode de calcul (TVA, précompte mobilier, commission, etc.)"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Miscellaneous fees and commissions"
+msgstr "Frais et commissions divers"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Name: {name}, Town: {city}"
+msgstr "Nom : {name}, Localité : {city}"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Night safe"
+msgstr "Coffre de nuit"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "No date"
+msgstr "Aucune date"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Non-presented circular cheque"
+msgstr "Chèque circulaire non présenté"
+
+#. module: l10n_be_coda
+#: model_terms:ir.ui.view,arch_db:l10n_be_coda.view_bank_statement_line_coda_form_inherit
+msgid "Notes"
+msgstr "Notes"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Number of the credit card"
+msgstr "Numéro de carte de crédit"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Original amount of the transaction"
+msgstr "Montant initial de l'opération"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Other"
+msgstr "Autre"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Other credit applications"
+msgstr "Autres crédits"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "PAN or card number"
+msgstr "PAN ou numéro de la carte"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "POS credit - individual transaction"
+msgstr "Crédit POS - opération individuelle"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "POS credit – Globalisation"
+msgstr "Crédit POS - Globalisation"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "POS number"
+msgstr "Numéro POS"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "POS others"
+msgstr "POS autres"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Paid or reason for refused payment"
+msgstr "Payé ou raison du paiement refusé"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Partial payment subscription"
+msgstr "Libération souscription partielle"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Participation in and management of interest refund system"
+msgstr "Adhésion et gestion système ristourne d'intérêts"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Pay-packet charges"
+msgstr "Frais enveloppe appointements"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Payable coupons/repayable securities"
+msgstr "Coupons payables/titres remboursables"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Payment"
+msgstr "Paiement"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Payment by GSM"
+msgstr "Paiement par GSM"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Payment by means of a payment card outside the Eurozone"
+msgstr "Paiement par carte de débit en dehors de l'euro zone"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Payment by means of a payment card within the Eurozone"
+msgstr "Paiement par carte de débit dans l'euro zone"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Payment by your branch/agents"
+msgstr "Paiement par votre succursale/agents"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Payment commercial paper"
+msgstr "Paiement effet de commerce"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Payment documents abroad"
+msgstr "Paiement documents étrangers"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Payment in advance"
+msgstr "Paiement anticipé"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Payment in your favour"
+msgstr "Virement en votre faveur"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Payment night safe"
+msgstr "Paiement coffre de nuit"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Payment of a foreign cheque"
+msgstr "Paiement chèque étranger"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid ""
+"Payment of coupons from a deposit or settlement of coupons delivered over "
+"the counter - credit under usual reserve"
+msgstr ""
+"Paiement de coupons en dépôt ou décompte de coupons reçus au guichet - "
+"crédit sauf bonne fin"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Payment of foreign bill"
+msgstr "Paiement effet étranger"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Payment of voucher"
+msgstr "Paiement du bon"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Payment of wages, etc."
+msgstr "Paiement des salaires, etc."
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Payment of your cheque"
+msgstr "Paiement de votre chèque"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Payment with tank card"
+msgstr "Paiement par carte essence"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Postage"
+msgstr "Frais de port"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Printing of forms"
+msgstr "Confection de formulaires"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Private"
+msgstr "Privé"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Provisionally unpaid"
+msgstr "Provisoirement impayé"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Purchase of Smartcard"
+msgstr "Achat smartcard"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Purchase of an international bank cheque"
+msgstr "Achat d'un chèque bancaire international"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Purchase of fiscal stamps"
+msgstr "Achat de timbres fiscaux"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Purchase of foreign bank notes"
+msgstr "Achat de billets de banque étrangers"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Purchase of gold/pieces"
+msgstr "Achat d'or/pièces"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Purchase of petrol coupons"
+msgstr "Achat de bons d'essence"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Purchase of securities"
+msgstr "Achat de titres"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Purchase of traveller’s cheque"
+msgstr "Achat chèques de voyage"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Rate"
+msgstr "Taux"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Reason"
+msgstr "Raison"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Registering compensation for savings accounts"
+msgstr "Indemnité de classement pour comptes d'épargne"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Regularisation costs"
+msgstr "Frais de régularisation"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Reimbursement"
+msgstr "Remboursement"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Reimbursement of cheque-related costs"
+msgstr "Remboursement de frais en rapport avec les chèques"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Reimbursement of costs"
+msgstr "Remboursement de frais"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Remittance of cheque by your branch - credit under usual reserve"
+msgstr "Remise d'un chèque par votre succursale - crédit sauf bonne fin"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Remittance of cheques, vouchers, etc. credit after collection"
+msgstr "Remise de chèques, bons, etc. crédit après encaissement"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Remittance of commercial paper - credit after collection"
+msgstr "Remise d'effet de commerce avec crédit après encaissement"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Remittance of commercial paper - credit under usual reserve"
+msgstr "Remise d'effet de commerce avec crédit sauf bonne fin"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Remittance of commercial paper for discount"
+msgstr "Remise d'effet à l'escompte"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Remittance of documents abroad - credit after collection"
+msgstr "Remise de documents étrangers - crédit après encaissement"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Remittance of documents abroad - credit under usual reserve"
+msgstr "Remise de documents étrangers - crédit sauf bonne fin"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Remittance of foreign bill credit after collection"
+msgstr "Remise effet de commerce avec crédit après encaissement"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Remittance of foreign bill credit under usual reserve"
+msgstr "Remise effet de commerce avec crédit sauf bonne fin"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Remittance of foreign cheque credit after collection"
+msgstr "Remise chèque sur l'étranger crédit après encaissement"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Remittance of foreign cheque credit under usual reserve"
+msgstr "Remise chèque sur l'étranger crédit sauf bonne fin"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Remittance of guaranteed foreign supplier's bill"
+msgstr "Remise d'effet fournisseur étranger avec aval"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Remittance of supplier's bill with guarantee"
+msgstr "Remise d'effet-fournisseur avec aval"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Remittance of supplier's bill without guarantee"
+msgstr "Remise d'effet-fournisseur sans aval"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Renting of direct debit box"
+msgstr "Location de boîte postale"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Renting of safes"
+msgstr "Location de coffre-fort"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid ""
+"Repayable securities from a deposit or delivered at the counter - credit "
+"under usual reserve"
+msgstr ""
+"Titres remboursables provenant d'un dépôt ou remis au guichet - crédit sauf "
+"bonne fin"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Research costs"
+msgstr "Frais de recherche"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Retrocession of issue commission"
+msgstr "Rétrocession de la commission de souscription"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Return of an irregular bill of exchange"
+msgstr "Renvoi d'un effet irrégulier"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Reversal"
+msgstr "Contre-passation"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Reversal of cheque"
+msgstr "Contre-passation d'un chèque"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Reversal of cheques"
+msgstr "Contre-passation de chèques"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Reversal of voucher"
+msgstr "Contre-passation d'un bon"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "SEPA B2B"
+msgstr "SEPA B2B"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "SEPA Direct Debit"
+msgstr "SEPA Direct Debit"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "SEPA core"
+msgstr "SEPA core"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Sale of foreign bank notes"
+msgstr "Vente de devises"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Sale of gold/pieces under usual reserve"
+msgstr "Vente d'or/pièces sauf bonne fin"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Sale of securities"
+msgstr "Vente de titres"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Sale of traveller’s cheque"
+msgstr "Vente chèques de voyage"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Second credit of unpaid cheque"
+msgstr "Deuxième crédit d'un chèque impayé"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Securities"
+msgstr "Titres"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Separately charged costs and provisions"
+msgstr "Frais et commissions pris séparément"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Settlement Date"
+msgstr "Date de règlement"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Settlement credit cards"
+msgstr "Décompte cartes de crédit"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Settlement of bank acceptances"
+msgstr "Liquidation acceptations bancaires"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Settlement of discount bank acceptance"
+msgstr "Décompte escompte acceptation bancaire"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Settlement of fixed advance"
+msgstr "Remboursement avance fixe"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Settlement of instalment credit"
+msgstr "Remboursement de crédit à tempérament"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Settlement of mortgage loan"
+msgstr "Paiement prêt hypothécaire"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Settlement of securities"
+msgstr "Liquidation de titres"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Share option plan – exercising an option"
+msgstr "Action plan d'option - exercice d'option"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Short-term loan"
+msgstr "Prêt à court terme"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Simple amount with detailed data"
+msgstr "Montant simple avec détails"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Simple amount without detailed data"
+msgstr "Montant simple sans détails"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Special charge for safe custody"
+msgstr "Droit de garde spécial"
+
+#. module: l10n_be_coda
+#: model:ir.model.fields,field_description:l10n_be_coda.field_account_bank_statement_import__split_transactions
+msgid "Split Transactions"
+msgstr "Opérations fractionnées"
+
+#. module: l10n_be_coda
+#: model_terms:ir.ui.view,arch_db:l10n_be_coda.account_bank_statement_import_coda
+msgid "Split collective payments"
+msgstr "Paiements collectifs fractionnés"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Spot purchase of foreign exchange"
+msgstr "Achat de devises au comptant"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Spot sale of foreign exchange"
+msgstr "Vente de devises au comptant"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Standing order"
+msgstr "Ordre permanent"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Structured format communication"
+msgstr "Format de communication structurée"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Subscription fee"
+msgstr "Frais d'abonnement"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Subscription to securities"
+msgstr "Souscription de titres"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Subsidy"
+msgstr "Subsvention"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Surety fee"
+msgstr "Commission cautionnement"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "TINA"
+msgstr "TINA"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Tender"
+msgstr "Adjudication"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Tenders"
+msgstr "Adjudications"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Term Investments"
+msgstr "Placements à terme"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Term loan"
+msgstr "Pret à terme"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Terminal cash deposit"
+msgstr "Dépôt en espèces au terminal"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Trade information"
+msgstr "Informations sur effets de commerce"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Transfer"
+msgstr "Virement"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Transfer from your account"
+msgstr "Virement de votre compte"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Transfer in your favour"
+msgstr "Virement en votre faveur"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Transfer in your favour – initiated by the bank"
+msgstr "Virement en votre faveur – initié par la banque"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Transfer to your account"
+msgstr "Virement à votre compte"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Travel insurance premium"
+msgstr "Prime assistance de voyage"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Type Direct Debit"
+msgstr "Type de Direct Debit"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Type of R transaction"
+msgstr "Type de transaction R"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Type of structured communication not supported: "
+msgstr "Type de communication structurée non pris en charge :"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Undefined transaction"
+msgstr "Opération non codifiée"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Unexecutable reimbursement"
+msgstr "Remboursement non exécutable"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Unexecutable transfer order"
+msgstr "Virement non exécutable"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Unloading Proton"
+msgstr "Déchargement Proton"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Unpaid commercial paper"
+msgstr "Effet de commerce impayé"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Unpaid debt"
+msgstr "Recouvrement impayé"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Unpaid foreign bill"
+msgstr "Effet étranger impayé"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Unpaid foreign cheque"
+msgstr "Chèque étranger impayé"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Unpaid postal order"
+msgstr "Assignation postale impayée"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Unpaid voucher"
+msgstr "Bon impayé"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Unsupported bank account structure "
+msgstr "Structure de compte bancaire non prise en charge"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Upload of prepaid card"
+msgstr "Chargement d'une carte prépayée"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Value (date) correction"
+msgstr "Correction application valeur"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Various transactions"
+msgstr "Opérations diverses"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Warrant"
+msgstr "Warrant"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Warrant fallen due"
+msgstr "Warrant échu"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Writ service fee"
+msgstr "Frais d'huissier de justice"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Wrong CODA code"
+msgstr "Mauvais code CODA"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Your certified cheque"
+msgstr "Votre chèque certifié"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Your issue"
+msgstr "Votre émission"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Your issue circular cheque"
+msgstr "Votre émission chèque circulaire"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Your purchase bank cheque"
+msgstr "Confection chèque bancaire"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Your repayment hire-purchase and similar claims"
+msgstr "Remboursement leasing et créances similaires"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Your repayment instalment credits"
+msgstr "Remboursement crédits à tempérament"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Your repayment mortgage loan"
+msgstr "Remboursement prêt hypothécaire"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "Your repurchase of issue"
+msgstr "Votre rachat d'émission"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "account number of the credit"
+msgstr "numéro de compte du crédit"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "amount (equivalent in foreign currency)"
+msgstr "montant (contre-valeur en devise étrangère)"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "amount of interest"
+msgstr "montant de l'intérêt"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "amount of the bill"
+msgstr "montant de l'effet"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "amount on which % is calculated"
+msgstr "montant sur lequel le % est appliqué"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "basic amount"
+msgstr "montant de base"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "basic amount of the calculation"
+msgstr "montant de base du calcul"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "cancellation"
+msgstr "annulation"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "card scheme"
+msgstr "schéma de carte"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "company number"
+msgstr "numéro d'entreprise"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "conformity code or blank"
+msgstr "code de conformité ou blancs"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "conventional maturity date"
+msgstr "date d'échéance conventionnelle"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "cumulative"
+msgstr "cumul"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "cumulative on network"
+msgstr "cumul sur le réseau"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "currency"
+msgstr "devise"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "date"
+msgstr "date"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "date of first transaction"
+msgstr "date de la première opération"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "date of issue of the bill"
+msgstr "date de la remise de l'effet"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "date of last transaction"
+msgstr "date de la dernière opération"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "date of transaction"
+msgstr "date de l'opération"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "debtor disagrees"
+msgstr "débiteur en désaccord"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "debtor’s account problem"
+msgstr "problème du compte débiteur"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "deposit amount"
+msgstr "montant du dépôt"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "deposit number"
+msgstr "numéro de dépôt"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "diesel"
+msgstr "diesel"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "distribution sector"
+msgstr "secteur de distribution"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "domestic fuel oil"
+msgstr "gasoil de chauffage"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "end date"
+msgstr "éfchéance"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "equivalent in EUR"
+msgstr "contre-valeur en EUR"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "equivalent in the currency of the account"
+msgstr "contre-valeur dans la devise du compte"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "europremium"
+msgstr "eurosuper"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "exchange rate"
+msgstr "cours de change"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "extension zone of account number of the credit"
+msgstr "zone d'extension du numéro de compte du crédit"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "fuel"
+msgstr "énergie"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "guarantee number (no. allocated by the bank)"
+msgstr "numéro de cautionnement (numéro attribué par la banque)"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "hour of payment"
+msgstr "heure du versement"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "hour of transaction"
+msgstr "heure de l'opération"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "identification number"
+msgstr "numéro d'identification"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "identification of terminal"
+msgstr "identification du terminal"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "interest"
+msgstr "intérêt"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "interest rate"
+msgstr "taux d'intérêt"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "interest rates, calculation basis"
+msgstr "taux d'intérêt, base de calcul"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "invoice number"
+msgstr "numéro de facture"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "issuing institution"
+msgstr "établissement émetteur"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "last (recurrent)"
+msgstr "dernier (récurrent)"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "lubricants"
+msgstr "lubrifiants"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "maturity date"
+msgstr "échéance"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "maturity date of the bill"
+msgstr "échéance de l'effet"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "message (structured of free)"
+msgstr "communication (structurée ou libre)"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "minimum"
+msgstr "minimum"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "minimum applicable"
+msgstr "minimale applicable"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "minimum not applicable"
+msgstr "minimale non applicable"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "minimum rate"
+msgstr "tarif minimal"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "new balance of the credit"
+msgstr "nouveau solde du crédit"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "nominal interest rate or rate of charge"
+msgstr "taux d'intérêt nominal ou taux de commission"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "number of days"
+msgstr "nombre de jours"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "number of the bill"
+msgstr "numéro de la facture"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "old balance of the credit"
+msgstr "ancien solde du crédit"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "one-off"
+msgstr "one-off"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "original amount"
+msgstr "montant initial"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "original amount (given by the customer)"
+msgstr "montant initial (fourni par le client)"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "other types"
+msgstr "autres types"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "paid"
+msgstr "payé"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "payment day"
+msgstr "date de versement"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "percent"
+msgstr "taux"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "percentage"
+msgstr "pourcentage"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "period from {} to {}"
+msgstr "période de {} à {}"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "period number"
+msgstr "numéro de la période"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "petrol"
+msgstr "pétrole"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "premium 99+"
+msgstr "super 99+"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "premium plus 98 oct"
+msgstr "super plus 98 oct"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "premium with lead substitute"
+msgstr "super avec substitut de plomb"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "product code"
+msgstr "code produit"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "rate"
+msgstr "cours de change"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "reason not specified"
+msgstr "raison non précisée"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "recurrent"
+msgstr "récurrent"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "reference of transaction"
+msgstr "référence de l'opération"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "reference of transaction on credit account"
+msgstr "référence de l'opération sur le compte ouvert pour le crédit"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "refund"
+msgstr "remboursement"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "regular unleaded"
+msgstr "ordinaire sans plomb"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "reject"
+msgstr "rejeter"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "return"
+msgstr "impayé"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "reversal"
+msgstr "rectification"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "reversal of purchases"
+msgstr "contre-passation achats"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "sequence number of first transaction"
+msgstr "numéro de séquence première opération"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "sequence number of last transaction"
+msgstr "numéro de séquence dernière opération"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "sequence number of transaction"
+msgstr "numéro de séquence de l'opération"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "sequence number of validation"
+msgstr "numéro de séquence de la validation"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "starting date"
+msgstr "date de début"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "technical problem"
+msgstr "problème technique"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "teledata"
+msgstr "teledata"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "term in days"
+msgstr "durée en jours"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "terminal number"
+msgstr "numéro du terminal"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "transaction type"
+msgstr "type d'opération"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "undefined"
+msgstr "non précisé"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "unit price"
+msgstr "prix unitaire"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "unset"
+msgstr "non précisé"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "unspecified"
+msgstr "non précisé"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "validation date"
+msgstr "date de validation"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "volume"
+msgstr "volume"
+
+#. module: l10n_be_coda
+#: code:addons/l10n_be_coda/wizard/account_bank_statement_import_coda.py:0
+#, python-format
+msgid "withdrawal"
+msgstr "retrait"

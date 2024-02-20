@@ -1,0 +1,347 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_amazon_spapi
+# 
+# Translators:
+# Linkup <link-up@naver.com>, 2022
+# Martin Trigaux, 2022
+# JH CHOI <hwangtog@gmail.com>, 2022
+# Sarah Park, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-06 12:46+0000\n"
+"PO-Revision-Date: 2022-06-10 15:35+0000\n"
+"Last-Translator: Sarah Park, 2023\n"
+"Language-Team: Korean (https://app.transifex.com/odoo/teams/41243/ko/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__aws_access_key
+msgid "AWS Access Key"
+msgstr "AWS 액세스 키"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__aws_secret_key
+msgid "AWS Secret Key"
+msgstr "AWS 보안 키"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__aws_session_token
+msgid "AWS Session Token"
+msgstr "AWS 세션 토큰"
+
+#. module: sale_amazon_spapi
+#: model:ir.model,name:sale_amazon_spapi.model_amazon_account
+msgid "Amazon Account"
+msgstr "아마존 계정"
+
+#. module: sale_amazon_spapi
+#: model:ir.model,name:sale_amazon_spapi.model_amazon_marketplace
+msgid "Amazon Marketplace"
+msgstr "아마존 마켓 플레이스"
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.authorization_error
+msgid "An error occurred"
+msgstr "오류가 발생했습니다."
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.authorization_error
+msgid "An error occurred while linking your account with Amazon."
+msgstr "계정을 Amazon 과 연결하는 동안 오류가 발생했습니다."
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__auth_token
+msgid "Authorization Token"
+msgstr "인증토큰"
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.authorization_error
+msgid "Back to my account"
+msgstr "내 계정으로 돌아가기"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_marketplace__code
+msgid "Code"
+msgstr "코드"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid "Could not establish the connection to the API."
+msgstr "APO 연결을 설정할 수 없습니다."
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid "Could not establish the connection to the feed URL."
+msgstr "피드 URL 연결을 설정할 수 없습니다."
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid "Could not establish the connection to the proxy."
+msgstr "프록시 연결을 설정할 수 없습니다."
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/controllers/onboarding.py:0
+#, python-format
+msgid "Could not find Amazon account with id %s"
+msgstr "%s 아이디는 Amazon 계정에서 찾을 수 없습니다."
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_marketplace__domain
+msgid "Domain"
+msgstr "도메인"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid "Error code: %s; description: %s"
+msgstr "오류 코드: %s; 내용: %s"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields.selection,name:sale_amazon_spapi.selection__amazon_marketplace__region__eu-west-1
+msgid "Europe"
+msgstr "유럽"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields.selection,name:sale_amazon_spapi.selection__amazon_marketplace__region__us-west-2
+msgid "Far East"
+msgstr "극동 지역"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/models/amazon_account.py:0
+#, python-format
+msgid ""
+"Gift message:\n"
+"%s"
+msgstr ""
+"선물 메시지 : \n"
+"%s"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__access_token
+msgid "LWA Access Token"
+msgstr "LWA 액세스 토큰"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__refresh_token
+msgid "LWA Refresh Token"
+msgstr "LWA 새로고침 토큰"
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.amazon_account_view_form_inherit
+msgid "Link with Amazon"
+msgstr "Amazon과 연결"
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.amazon_account_view_form_inherit
+msgid ""
+"Link your Amazon account with Odoo to start synchronizing your Amazon "
+"orders."
+msgstr ""
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields.selection,name:sale_amazon_spapi.selection__amazon_marketplace__region__us-east-1
+msgid "North America"
+msgstr "북미 지역"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_marketplace__region
+msgid "Region"
+msgstr "지역"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__restricted_data_token
+msgid "Restricted Data Token"
+msgstr "특별 취급 데이터 토큰"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_marketplace__seller_central_url
+msgid "Seller Central URL"
+msgstr "판매자 센트럴 URL"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__seller_key
+msgid "Seller ID"
+msgstr "판매자 ID"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/models/amazon_account.py:0
+#, python-format
+msgid "Successfully updated the marketplaces available to this account!"
+msgstr "이 계정으로 이용 가능한 마켓 플레이스를 성공적으로 업데이트했습니다!"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_marketplace__region
+msgid ""
+"The Amazon region of the marketplace. Please refer to the Selling Partner "
+"API documentation to find the correct region."
+msgstr "Amazon 마켓플레이스 지역입니다. 올바른 지역을 찾으시려면 파트너 판매자 API 설명 자료를 참조하십시오."
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__auth_token
+msgid ""
+"The MWS Authorization Token of the Amazon Seller Central account for Odoo"
+msgstr "Odoo 용 Amazon Seller Central 계정의 MWS 인증 토큰"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__seller_key
+msgid "The Merchant ID of the Amazon Seller Central account"
+msgstr "Amazon Seller Central 계정의 판매자 ID"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_marketplace__seller_central_url
+msgid "The Seller Central URL"
+msgstr ""
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid "The communication with the API failed."
+msgstr "API와의 통신에 실패했습니다."
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid ""
+"The communication with the API failed.\n"
+"Error code: %s; description: %s"
+msgstr ""
+"API와의 통신에 실패했습니다.\n"
+"오류 코드: %s; 설명: %s"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_marketplace__code
+msgid "The country code in ISO 3166-1 format"
+msgstr "ISO 3166-1 형식의 국가 코드"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_marketplace__domain
+msgid "The domain name associated with the marketplace"
+msgstr "마켓 플레이스와 연관된 도메인 이름"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__refresh_token
+msgid "The long-lived token that can be exchanged for a new access token."
+msgstr "신규 액세스 토큰으로 교환할 수 있는 장기 사용 토큰입니다."
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__aws_credentials_expiry
+msgid "The moment at which the AWS credentials become invalid."
+msgstr "AWS 자격 증명이 무효화되는 시점입니다."
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__restricted_data_token_expiry
+msgid "The moment at which the Restricted Data Token becomes invalid."
+msgstr "특별 취급 데이터 토큰이 무효화되는 시기입니다."
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__access_token_expiry
+msgid "The moment at which the token becomes invalid."
+msgstr "토큰이 무효화되는 시점입니다."
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__aws_access_key
+msgid "The short-lived key used to identify the assumed ARN role on AWS."
+msgstr "AWS에서 ARN을 식별하는데 사용하는 단기용 키입니다."
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__aws_secret_key
+msgid ""
+"The short-lived key used to verify the access to the assumed ARN role on "
+"AWS."
+msgstr "AWS에서 ARN에 대한 액세스를 식별하는데 사용하는 단기 키입니다."
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__restricted_data_token
+msgid ""
+"The short-lived token used instead of the LWA Access Token to access "
+"restricted data"
+msgstr "특별 취급 데이터에 액세스하기 위한 LWA 액세스 토큰 대신 사용하는 단기 키입니다."
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__access_token
+msgid "The short-lived token used to query Amazon API on behalf of a seller."
+msgstr "판매자를 대신하여 Amazon API를 쿼리하는데 사용하는 단기 토큰입니다."
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__aws_session_token
+msgid ""
+"The short-lived token used to query the SP-API with the assumed ARN role on "
+"AWS."
+msgstr "AWS에서 ARN에 대한 SP-API를 쿼리하는데 사용하는 단기용 토큰입니다."
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.amazon_account_view_form_inherit
+msgid ""
+"This action will disconnect your account with Amazon and cannot be"
+"                                  undone. Are you sure you want to proceed?"
+msgstr ""
+
+#. module: sale_amazon_spapi
+#: model:ir.model,name:sale_amazon_spapi.model_stock_picking
+msgid "Transfer"
+msgstr "전송"
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.amazon_account_view_form_inherit
+msgid "Unlink account"
+msgstr "계정 연결 해제"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid "You first need to authorize the Amazon account %s."
+msgstr "먼저 Amazon 계정 %s에 권한을 지정해야 합니다."
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid ""
+"You first need to set the marketplaces to synchronize for the Amazon account"
+" %s."
+msgstr "먼저 Amazon 계정 %s에 대해 동기화할 마켓플레이스를 설정해야 합니다."
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/models/amazon_account.py:0
+#, python-format
+msgid ""
+"You reached the maximum number of requests for this operation; please try "
+"again later."
+msgstr "이 작업에서 가능한 최대 요청 수에 도달했습니다. 나중에 다시 시도하시기 바랍니다."
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.amazon_account_view_form_inherit
+msgid "Your Amazon account is linked with Odoo."
+msgstr "귀하의 Amazon 계정은 Odoo와 연결되어 있습니다."
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/models/amazon_account.py:0
+#, python-format
+msgid ""
+"[%s] %s\n"
+"Condition: %s - %s"
+msgstr ""
+"[%s] %s\n"
+"조건 : %s - %s"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/models/amazon_account.py:0
+#, python-format
+msgid "[%s] Delivery Charges for %s"
+msgstr "[%s] %s에 대한 배송료"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/models/amazon_account.py:0
+#, python-format
+msgid "[%s] Gift Wrapping Charges for %s"
+msgstr "[%s] %s에 대한 선물 포장 요금"

@@ -1,0 +1,1474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <record id="account_financial_report_rs_BS" model="account.financial.html.report">
+          <field name="name">Balance Sheet</field>
+          <field name="unfold_all_filter" eval="True"/>
+          <field name="date_range" eval="False"/>
+          <field name="parent_id" ref="l10n_rs.account_reports_rs_statements_menu"/>
+          <field name="show_journal_filter" eval="True"/>
+          <field name="country_id" ref="base.rs"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets" model="account.financial.html.report.line">
+          <field name="name">Assets (A + B + C + D)</field>
+          <field name="financial_report_id" ref="account_financial_report_rs_BS"/>
+          <field name="code">RS_0071</field>
+          <field name="level" eval="0"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">RS_0001 + RS_0002 + RS_0042 + RS_0043</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_A" model="account.financial.html.report.line">
+          <field name="name">A. Subscribed capital unpaid</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets"/>
+          <field name="code">RS_0001</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '00%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B" model="account.financial.html.report.line">
+          <field name="name">B. Permanent assets (I + II + III + IV + V)</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets"/>
+          <field name="code">RS_0002</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">RS_0003 + RS_0010 + RS_0019 + RS_0024 + RS_0034</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_I" model="account.financial.html.report.line">
+          <field name="name">I. Intangible assets</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B"/>
+          <field name="code">RS_0003</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">RS_0004 + RS_0005 + RS_0006 + RS_0007 + RS_0008 + RS_0009 + RS_Assets_B_I_7</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_I_1" model="account.financial.html.report.line">
+          <field name="name">1. Investment in development</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_I"/>
+          <field name="code">RS_0004</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '010%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_I_2" model="account.financial.html.report.line">
+          <field name="name">2. Concessions, patents, licenses, trademarks, service marks, software and similar rights</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_I"/>
+          <field name="code">RS_0005</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="['|', ('account_id.code', '=like', '011%'), ('account_id.code', '=like', '012%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_I_3" model="account.financial.html.report.line">
+          <field name="name">3. Goodwill</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_I"/>
+          <field name="code">RS_0006</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '013%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_I_4" model="account.financial.html.report.line">
+          <field name="name">4. Other intangible assets</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_I"/>
+          <field name="code">RS_0007</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '014%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_I_5" model="account.financial.html.report.line">
+          <field name="name">5. In-process intangible assets</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_I"/>
+          <field name="code">RS_0008</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="5"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '015%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_I_6" model="account.financial.html.report.line">
+          <field name="name">6. Advances for intangible assets</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_I"/>
+          <field name="code">RS_0009</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="6"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '016%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_I_7" model="account.financial.html.report.line">
+          <field name="name">7. Provisions for acquisition of intangible assets</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_I"/>
+          <field name="code">RS_Assets_B_I_7</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="7"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '019%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_II" model="account.financial.html.report.line">
+          <field name="name">II. Immovables, plants and equipment</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B"/>
+          <field name="code">RS_0010</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">RS_0011 + RS_0012 + RS_0013 + RS_0014 + RS_0015 + RS_0016 + RS_0017 + RS_0018 + RS_Assets_B_II_9</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_II_1" model="account.financial.html.report.line">
+          <field name="name">1. Land</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_II"/>
+          <field name="code">RS_0011</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="['|', ('account_id.code', '=like', '020%'), ('account_id.code', '=like', '021%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_II_2" model="account.financial.html.report.line">
+          <field name="name">2. Buildings</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_II"/>
+          <field name="code">RS_0012</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '022%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_II_3" model="account.financial.html.report.line">
+          <field name="name">3. Plant and equipment</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_II"/>
+          <field name="code">RS_0013</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '023%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_II_4" model="account.financial.html.report.line">
+          <field name="name">4. Investment immovables</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_II"/>
+          <field name="code">RS_0014</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '024%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_II_5" model="account.financial.html.report.line">
+          <field name="name">5. Other immovables, plant and equipment</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_II"/>
+          <field name="code">RS_0015</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="5"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '025%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_II_6" model="account.financial.html.report.line">
+          <field name="name">6. Immovables, plant and equipment under construction</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_II"/>
+          <field name="code">RS_0016</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="6"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '026%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_II_7" model="account.financial.html.report.line">
+          <field name="name">7. Investments in third-party immovables, plant and equipment</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_II"/>
+          <field name="code">RS_0017</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="7"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '027%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_II_8" model="account.financial.html.report.line">
+          <field name="name">8. Advances for immovables, plant and equipment</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_II"/>
+          <field name="code">RS_0018</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="8"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '028%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_II_9" model="account.financial.html.report.line">
+          <field name="name">9. Provisions for property, plant and equipment</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_II"/>
+          <field name="code">RS_Assets_B_II_9</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="9"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '029%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_III" model="account.financial.html.report.line">
+          <field name="name">III. Biological resources</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B"/>
+          <field name="code">RS_0019</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">RS_0020 + RS_0021 + RS_0022 + RS_0023 + RS_Assets_B_III_5</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_III_1" model="account.financial.html.report.line">
+          <field name="name">1. Forest and plantations</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_III"/>
+          <field name="code">RS_0020</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="['|', ('account_id.code', '=like', '030%'), ('account_id.code', '=like', '031%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_III_2" model="account.financial.html.report.line">
+          <field name="name">2. Livestock</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_III"/>
+          <field name="code">RS_0021</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '032%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_III_3" model="account.financial.html.report.line">
+          <field name="name">3. Biological resources in preparation</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_III"/>
+          <field name="code">RS_0022</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '037%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_III_4" model="account.financial.html.report.line">
+          <field name="name">4. Advances for biological resources</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_III"/>
+          <field name="code">RS_0023</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '038%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_III_5" model="account.financial.html.report.line">
+          <field name="name">5. Provisions of natural assets</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_III"/>
+          <field name="code">RS_Assets_B_III_5</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="5"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '039%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_IV" model="account.financial.html.report.line">
+          <field name="name">IV. Long-term financial investments</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B"/>
+          <field name="code">RS_0024</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">RS_0025 + RS_0026 + RS_0027 + RS_0028 + RS_0029 + RS_0030 + RS_0031 + RS_0032 + RS_0033 + RS_Assets_B_IV_10</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_IV_1" model="account.financial.html.report.line">
+          <field name="name">1. Participation in equity of subsidiaries</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_IV"/>
+          <field name="code">RS_0025</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '040%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_IV_2" model="account.financial.html.report.line">
+          <field name="name">2. Participation in equity of associates and joint ventures</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_IV"/>
+          <field name="code">RS_0026</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '041%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_IV_3" model="account.financial.html.report.line">
+          <field name="name">3. Participation in equity in other legal entities and other securities for sale</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_IV"/>
+          <field name="code">RS_0027</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '042%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_IV_4" model="account.financial.html.report.line">
+          <field name="name">4. Long-term investments in parent companies and subsidiaries</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_IV"/>
+          <field name="code">RS_0028</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="['|', ('account_id.code', '=like', '0430%'), ('account_id.code', '=like', '0440%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_IV_5" model="account.financial.html.report.line">
+          <field name="name">5. Long-term investments in other associated legal entities</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_IV"/>
+          <field name="code">RS_0029</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="5"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="['|', ('account_id.code', '=like', '0431%'), ('account_id.code', '=like', '0441%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_IV_6" model="account.financial.html.report.line">
+          <field name="name">6. Long-term investments - domestic</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_IV"/>
+          <field name="code">RS_0030</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="6"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '0450%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_IV_7" model="account.financial.html.report.line">
+          <field name="name">7. Long-term investments - foreign</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_IV"/>
+          <field name="code">RS_0031</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="7"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '0451%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_IV_8" model="account.financial.html.report.line">
+          <field name="name">8. Securities held to maturity</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_IV"/>
+          <field name="code">RS_0032</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="8"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '046%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_IV_9" model="account.financial.html.report.line">
+          <field name="name">9. Other long-term financial investments</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_IV"/>
+          <field name="code">RS_0033</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="9"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '048%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_IV_10" model="account.financial.html.report.line">
+          <field name="name">10. Provisions for long-term financial investments</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_IV"/>
+          <field name="code">RS_Assets_B_IV_10</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="10"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '049%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_V" model="account.financial.html.report.line">
+          <field name="name">V. Long-term financial receivables</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B"/>
+          <field name="code">RS_0034</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="5"/>
+          <field name="formulas">RS_0035 + RS_0036 + RS_0037 + RS_0038 + RS_0039 + RS_0040 + RS_0041 + RS_Assets_B_V_8</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_V_1" model="account.financial.html.report.line">
+          <field name="name">1. Receivables from parent company and subsidiaries</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_V"/>
+          <field name="code">RS_0035</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '050%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_V_2" model="account.financial.html.report.line">
+          <field name="name">2. Receivables from other associated companies</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_V"/>
+          <field name="code">RS_0036</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '051%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_V_3" model="account.financial.html.report.line">
+          <field name="name">3. Receivables from credit sales</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_V"/>
+          <field name="code">RS_0037</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '052%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_V_4" model="account.financial.html.report.line">
+          <field name="name">4. Receivables from sales made under financial leasing contracts</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_V"/>
+          <field name="code">RS_0038</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '053%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_V_5" model="account.financial.html.report.line">
+          <field name="name">5. Receivables on sureties</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_V"/>
+          <field name="code">RS_0039</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="5"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '054%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_V_6" model="account.financial.html.report.line">
+          <field name="name">6. Contested and doubtful receivables</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_V"/>
+          <field name="code">RS_0040</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="6"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '055%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_V_7" model="account.financial.html.report.line">
+          <field name="name">7. Other long-term receivables</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_V"/>
+          <field name="code">RS_0041</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="7"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '056%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_B_V_8" model="account.financial.html.report.line">
+          <field name="name">8. Provisions for long-term financial investments</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_B_V"/>
+          <field name="code">RS_Assets_B_V_8</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="8"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '059%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_C" model="account.financial.html.report.line">
+          <field name="name">C. Deferred tax assets</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets"/>
+          <field name="code">RS_0042</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '288%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D" model="account.financial.html.report.line">
+          <field name="name">D. Current assets (I + II + III + IV + V + VI + VII + VIII + IX)</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets"/>
+          <field name="code">RS_0043</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">RS_0044 + RS_0051 + RS_0059 + RS_0060 + RS_0061 + RS_0062 + RS_0068 + RS_0069 + RS_0070</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_I" model="account.financial.html.report.line">
+          <field name="name">I. Inventories</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D"/>
+          <field name="code">RS_0044</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">RS_0045 + RS_0046 + RS_0047 + RS_0048 + RS_0049 + RS_0050</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_I_1" model="account.financial.html.report.line">
+          <field name="name">1. Materials, spare parts, tools and small inventory</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D_I"/>
+          <field name="code">RS_0045</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '10%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_I_2" model="account.financial.html.report.line">
+          <field name="name">2. Work and services in progress</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D_I"/>
+          <field name="code">RS_0046</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '11%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_I_3" model="account.financial.html.report.line">
+          <field name="name">3. Finished products</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D_I"/>
+          <field name="code">RS_0047</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '12%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_I_4" model="account.financial.html.report.line">
+          <field name="name">4. Goods</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D_I"/>
+          <field name="code">RS_0048</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '13%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_I_5" model="account.financial.html.report.line">
+          <field name="name">5. Permanent assets held for sale</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D_I"/>
+          <field name="code">RS_0049</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="5"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '14%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_I_6" model="account.financial.html.report.line">
+          <field name="name">6. Advances paid for inventories and services</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D_I"/>
+          <field name="code">RS_0050</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="6"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '15%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_II" model="account.financial.html.report.line">
+          <field name="name">II. Receivables from sales</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D"/>
+          <field name="code">RS_0051</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">RS_0052 + RS_0053 + RS_0054 + RS_0055 + RS_0056 + RS_0057 + RS_0058 + RS_D_II_8</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_II_1" model="account.financial.html.report.line">
+          <field name="name">1. Domestic trade receivables - parent companies and subsidiaries</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D_II"/>
+          <field name="code">RS_0052</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '200%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_II_2" model="account.financial.html.report.line">
+          <field name="name">2. Foreign trade receivables - parent companies and subsidiaries</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D_II"/>
+          <field name="code">RS_0053</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '201%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_II_3" model="account.financial.html.report.line">
+          <field name="name">3. Domestic trade receivables - other associated companies</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D_II"/>
+          <field name="code">RS_0054</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '202%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_II_4" model="account.financial.html.report.line">
+          <field name="name">4. Foreign trade receivables - other associated companies</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D_II"/>
+          <field name="code">RS_0055</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '203%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_II_5" model="account.financial.html.report.line">
+          <field name="name">5. Trade receivables - domestic</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D_II"/>
+          <field name="code">RS_0056</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="5"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '204%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_II_6" model="account.financial.html.report.line">
+          <field name="name">6. Trade receivables - foreign</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D_II"/>
+          <field name="code">RS_0057</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="6"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '205%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_II_7" model="account.financial.html.report.line">
+          <field name="name">7. Other receivables from sales</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D_II"/>
+          <field name="code">RS_0058</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="7"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '206%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_II_8" model="account.financial.html.report.line">
+          <field name="name">8. Provisions for trade receivables</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D_II"/>
+          <field name="code">RS_D_II_8</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="8"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '209%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_III" model="account.financial.html.report.line">
+          <field name="name">III. Receivables from specific business operations</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D"/>
+          <field name="code">RS_0059</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '21%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_IV" model="account.financial.html.report.line">
+          <field name="name">IV. Other receivables</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D"/>
+          <field name="code">RS_0060</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '22%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_V" model="account.financial.html.report.line">
+          <field name="name">V. Financial assets at fair value through profit and loss account</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D"/>
+          <field name="code">RS_0061</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="5"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '236%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_VI" model="account.financial.html.report.line">
+          <field name="name">VI. Short-term financial investments</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D"/>
+          <field name="code">RS_0062</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="6"/>
+          <field name="formulas">RS_0063 + RS_0064 + RS_0065 + RS_0066 + RS_0067 + RS_D_VI_6</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_VI_1" model="account.financial.html.report.line">
+          <field name="name">1. Short-term loans and investments in parent companies and subsidiaries</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D_VI"/>
+          <field name="code">RS_0063</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '230%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_VI_2" model="account.financial.html.report.line">
+          <field name="name">2. Short-term loans and investments in other associated companies</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D_VI"/>
+          <field name="code">RS_0064</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '231%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_VI_3" model="account.financial.html.report.line">
+          <field name="name">3. Short-term loans - domestic</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D_VI"/>
+          <field name="code">RS_0065</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '232%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_VI_4" model="account.financial.html.report.line">
+          <field name="name">4. Short-term loans - foreign</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D_VI"/>
+          <field name="code">RS_0066</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '233%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_VI_5" model="account.financial.html.report.line">
+          <field name="name">5. Other short-term financial investments</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D_VI"/>
+          <field name="code">RS_0067</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="5"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="['|', ('account_id.code', '=like', '234%'), '|', ('account_id.code', '=like', '235%'), ('account_id.code', '=like', '238%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_VI_6" model="account.financial.html.report.line">
+          <field name="name">6. Provisions for short–term investments</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D_VI"/>
+          <field name="code">RS_D_VI_6</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="6"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '239%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_VII" model="account.financial.html.report.line">
+          <field name="name">VII. Cash and cash equivalents</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D"/>
+          <field name="code">RS_0068</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="7"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="['|', ('account_id.code', '=like', '24%'), ('account_id.code', '=like', '25%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_VIII" model="account.financial.html.report.line">
+          <field name="name">VIII. Value added tax</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D"/>
+          <field name="code">RS_0069</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="8"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '27%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_assets_D_IX" model="account.financial.html.report.line">
+          <field name="name">IX. Accrued expenses</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_assets_D"/>
+          <field name="code">RS_0070</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="9"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '28%'), '!', ('account_id.code', '=like', '288%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities" model="account.financial.html.report.line">
+          <field name="name">Equity and liabilities (A + B + C + D - E)</field>
+          <field name="financial_report_id" ref="account_financial_report_rs_BS"/>
+          <field name="code">RS_0464</field>
+          <field name="level" eval="0"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">RS_0424 + RS_0442 + RS_0441 + RS_0401 - RS_0463</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A" model="account.financial.html.report.line">
+          <field name="name">A. Equity (I + II - III + IV + V + VI - VII + VIII + IX - X)</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities"/>
+          <field name="code">RS_0401</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">max((RS_0402 + RS_0411 + RS_0413 + RS_0414 + RS_0415 + RS_0417 + RS_0420) - (RS_0412 + RS_0416 + RS_0421), 0)</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_I" model="account.financial.html.report.line">
+          <field name="name">I. Capital</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_A"/>
+          <field name="code">RS_0402</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">RS_0403 + RS_0404 + RS_0405 + RS_0406 + RS_0407 + RS_0408 + RS_0409 + RS_0410</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_I_1" model="account.financial.html.report.line">
+          <field name="name">1. Share capital</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_A_I"/>
+          <field name="code">RS_0403</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '300%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_I_2" model="account.financial.html.report.line">
+          <field name="name">2. Stakes in limited liability companies</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_A_I"/>
+          <field name="code">RS_0404</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '301%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_I_3" model="account.financial.html.report.line">
+          <field name="name">3. Participating interests</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_A_I"/>
+          <field name="code">RS_0405</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '302%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_I_4" model="account.financial.html.report.line">
+          <field name="name">4. State owned capital</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_A_I"/>
+          <field name="code">RS_0406</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '303%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_I_5" model="account.financial.html.report.line">
+          <field name="name">5. Socially owned capital</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_A_I"/>
+          <field name="code">RS_0407</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="5"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '304%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_I_6" model="account.financial.html.report.line">
+          <field name="name">6. Stakes in cooperatives</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_A_I"/>
+          <field name="code">RS_0408</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="6"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '305%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_I_7" model="account.financial.html.report.line">
+          <field name="name">7. Share premium</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_A_I"/>
+          <field name="code">RS_0409</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="7"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '306%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_I_8" model="account.financial.html.report.line">
+          <field name="name">8. Other capital</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_A_I"/>
+          <field name="code">RS_0410</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="8"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '309%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_II" model="account.financial.html.report.line">
+          <field name="name">II. Subscribed capital unpaid</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_A"/>
+          <field name="code">RS_0411</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '31%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_III" model="account.financial.html.report.line">
+          <field name="name">III. Treasury shares</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_A"/>
+          <field name="code">RS_0412</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="['|', ('account_id.code', '=like', '047%'), ('account_id.code', '=like', '237%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_IV" model="account.financial.html.report.line">
+          <field name="name">IV. Reserves</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_A"/>
+          <field name="code">RS_0413</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '32%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_V" model="account.financial.html.report.line">
+          <field name="name">V. Revaluation reserves from intangible assets, immovables, plants and equipment</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_A"/>
+          <field name="code">RS_0414</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="5"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '330%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_VI" model="account.financial.html.report.line">
+          <field name="name">VI. Unrealized profits from securities and other elements of other comprehensive income (credit balance accounts of group 33 except 330)</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_A"/>
+          <field name="code">RS_0415</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="6"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('credit', '!=', 0.0),('account_id.code', '=like', '33%'), '!', ('account_id.code', '=like', '330%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_VII" model="account.financial.html.report.line">
+          <field name="name">VII. Unrealized losses from securities and other elements of other comprehensive income (debit balance accounts of group 33 except 330)</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_A"/>
+          <field name="code">RS_0416</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="7"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('debit', '!=', 0.0),('account_id.code', '=like', '33%'), '!', ('account_id.code', '=like', '330%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_VIII" model="account.financial.html.report.line">
+          <field name="name">VIII. Retained earnings</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_A"/>
+          <field name="code">RS_0417</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="8"/>
+          <field name="formulas">RS_0418 + RS_0419</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_previous_year_earnings" model="account.financial.html.report.line">
+          <field name="code">RS_prev_year</field>
+          <field name="level" eval="3"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="['|', ('account_id.user_type_id.internal_group','=','expense'), ('account_id.user_type_id.internal_group','=', 'income')]"/>
+          <field name="show_domain">never</field>
+          <field name="special_date_changer">to_beginning_of_period</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_VIII_1" model="account.financial.html.report.line">
+          <field name="name">1. Retained earnings from previous years</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_A_VIII"/>
+          <field name="code">RS_0418</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">max(RS_prev_year + RS_0418_1 + RS_0422_1, 0)</field>
+          <field name="domain" eval="[('account_id.code', '=like', '340%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_VIII_1_1" model="account.financial.html.report.line">
+          <field name="name">Retained profit from previous years</field>
+          <field name="code">RS_0418_1</field>
+          <field name="level" eval="3"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '340%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_VIII_2" model="account.financial.html.report.line">
+          <field name="name">2. Retained earnings for the current year</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_A_VIII"/>
+          <field name="code">RS_0419</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">max(RS_1064 + RS_0419_1 + RS_0423_1, 0)</field>
+          <field name="action_id" ref='action_account_report_rs_PnL'/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_VIII_2_1" model="account.financial.html.report.line">
+          <field name="name">Retained profit from current year</field>
+          <field name="code">RS_0419_1</field>
+          <field name="level" eval="3"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '341%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_IX" model="account.financial.html.report.line">
+          <field name="name">IX. Participation without control rights</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_A"/>
+          <field name="code">RS_0420</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="9"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_X" model="account.financial.html.report.line">
+          <field name="name">X. Loss</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_A"/>
+          <field name="code">RS_0421</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="10"/>
+          <field name="formulas">RS_0422 + RS_0423</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_X_1" model="account.financial.html.report.line">
+          <field name="name">1. Loss from previous years</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_A_X"/>
+          <field name="code">RS_0422</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">-min(RS_prev_year + RS_0422_1 + RS_0418_1, 0)</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_X_1_1" model="account.financial.html.report.line">
+          <field name="name">Previous year's losses</field>
+          <field name="code">RS_0422_1</field>
+          <field name="level" eval="3"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '350%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_X_2" model="account.financial.html.report.line">
+          <field name="name">2. Loss for the current year</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_A_X"/>
+          <field name="code">RS_0423</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">-min(RS_1064 + RS_0423_1 + RS_0419_1, 0)</field>
+          <field name="action_id" ref='action_account_report_rs_PnL'/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_A_X_2_1" model="account.financial.html.report.line">
+          <field name="name">Current year loss</field>
+          <field name="code">RS_0423_1</field>
+          <field name="level" eval="3"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '351%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_B" model="account.financial.html.report.line">
+          <field name="name">B. Long-term provisions and liabilities (I + II)</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities"/>
+          <field name="code">RS_0424</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">RS_0425 + RS_0432</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_B_I" model="account.financial.html.report.line">
+          <field name="name">I. Long-term provisions</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_B"/>
+          <field name="code">RS_0425</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">RS_0426 + RS_0427 + RS_0428 + RS_0429 + RS_0430 + RS_0431</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_B_I_1" model="account.financial.html.report.line">
+          <field name="name">1. Provisions for costs incurred during the warranty period</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_B_I"/>
+          <field name="code">RS_0426</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '400%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_B_I_2" model="account.financial.html.report.line">
+          <field name="name">2. Provisions for the recovery of natural resources</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_B_I"/>
+          <field name="code">RS_0427</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '401%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_B_I_3" model="account.financial.html.report.line">
+          <field name="name">3. Provisions for restructuring costs</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_B_I"/>
+          <field name="code">RS_0428</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '403%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_B_I_4" model="account.financial.html.report.line">
+          <field name="name">4. Provisions for compensations and other employment benefits</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_B_I"/>
+          <field name="code">RS_0429</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '404%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_B_I_5" model="account.financial.html.report.line">
+          <field name="name">5. Provisions for litigation expenses</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_B_I"/>
+          <field name="code">RS_0430</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="5"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '405%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_B_I_6" model="account.financial.html.report.line">
+          <field name="name">6. Other long-term provisions</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_B_I"/>
+          <field name="code">RS_0431</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="6"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="['|', ('account_id.code', '=like', '402%'), ('account_id.code', '=like', '409%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_B_II" model="account.financial.html.report.line">
+          <field name="name">II. Long-term liabilities</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_B"/>
+          <field name="code">RS_0432</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">RS_0433 + RS_0434 + RS_0435 + RS_0436 + RS_0437 + RS_0438 + RS_0439 + RS_0440</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_B_II_1" model="account.financial.html.report.line">
+          <field name="name">1. Debts convertible into equity</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_B_II"/>
+          <field name="code">RS_0433</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '410%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_B_II_2" model="account.financial.html.report.line">
+          <field name="name">2. Liabilities to parent companies and subsidiaries</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_B_II"/>
+          <field name="code">RS_0434</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '411%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_B_II_3" model="account.financial.html.report.line">
+          <field name="name">3. Liabilities to other associated companies</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_B_II"/>
+          <field name="code">RS_0435</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '412%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_B_II_4" model="account.financial.html.report.line">
+          <field name="name">4. Liabilities for long-term securities</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_B_II"/>
+          <field name="code">RS_0436</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '413%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_B_II_5" model="account.financial.html.report.line">
+          <field name="name">5. Long-term loans - domestic</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_B_II"/>
+          <field name="code">RS_0437</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="5"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '414%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_B_II_6" model="account.financial.html.report.line">
+          <field name="name">6. Long-term loans - foreign</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_B_II"/>
+          <field name="code">RS_0438</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="6"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '415%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_B_II_7" model="account.financial.html.report.line">
+          <field name="name">7. Financial leasing liabilities</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_B_II"/>
+          <field name="code">RS_0439</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="7"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '416%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_B_II_8" model="account.financial.html.report.line">
+          <field name="name">8. Other long-term liabilities</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_B_II"/>
+          <field name="code">RS_0440</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="8"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '419%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_C" model="account.financial.html.report.line">
+          <field name="name">C. Deferred tax liabilities</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities"/>
+          <field name="code">RS_0441</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '498%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_D" model="account.financial.html.report.line">
+          <field name="name">D. Short-term liabilities (I + II + III + IV + V + VI + VII)</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities"/>
+          <field name="code">RS_0442</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">RS_0443 + RS_0450 + RS_0451 + RS_0459 + RS_0460 + RS_0461 + RS_0462</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_D_I" model="account.financial.html.report.line">
+          <field name="name">I. Short-term financial liabilities</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_D"/>
+          <field name="code">RS_0443</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">RS_0444 + RS_0445 + RS_0446 + RS_0447 + RS_0448 + RS_0449</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_D_I_1" model="account.financial.html.report.line">
+          <field name="name">1. Short-term loans from parent company and subsidiaries</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_D_I"/>
+          <field name="code">RS_0444</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '420%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_D_I_2" model="account.financial.html.report.line">
+          <field name="name">2. Short-term loans from other associated companies</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_D_I"/>
+          <field name="code">RS_0445</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '421%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_D_I_3" model="account.financial.html.report.line">
+          <field name="name">3. Short-term loans - domestic</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_D_I"/>
+          <field name="code">RS_0446</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '422%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_D_I_4" model="account.financial.html.report.line">
+          <field name="name">4. Short-term loans - foreign</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_D_I"/>
+          <field name="code">RS_0447</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '423%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_D_I_5" model="account.financial.html.report.line">
+          <field name="name">5. Liabilities for permanent assets and assets of discontinued operations held for sale</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_D_I"/>
+          <field name="code">RS_0448</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="5"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '427%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_D_I_6" model="account.financial.html.report.line">
+          <field name="name">6. Other short-term financial liabilities</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_D_I"/>
+          <field name="code">RS_0449</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="6"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="['|', ('account_id.code', '=like', '424%'),'|', ('account_id.code', '=like', '425%'),'|', ('account_id.code', '=like', '426%'), ('account_id.code', '=like', '429%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_D_II" model="account.financial.html.report.line">
+          <field name="name">II. Prepayments, deposits and guarantees</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_D"/>
+          <field name="code">RS_0450</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '430%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_D_III" model="account.financial.html.report.line">
+          <field name="name">III. Operating liabilities</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_D"/>
+          <field name="code">RS_0451</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">RS_0452 + RS_0453 + RS_0454 + RS_0455 + RS_0456 + RS_0457 + RS_0458</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_D_III_1" model="account.financial.html.report.line">
+          <field name="name">1. Trade payables - domestic parent company and subsidiaries</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_D_III"/>
+          <field name="code">RS_0452</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '431%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_D_III_2" model="account.financial.html.report.line">
+          <field name="name">2. Trade payables - foreign parent company and subsidiaries</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_D_III"/>
+          <field name="code">RS_0453</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '432%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_D_III_3" model="account.financial.html.report.line">
+          <field name="name">3. Trade payables - other domestic associated companies</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_D_III"/>
+          <field name="code">RS_0454</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '433%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_D_III_4" model="account.financial.html.report.line">
+          <field name="name">4. Trade payables - other foreign associated companies</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_D_III"/>
+          <field name="code">RS_0455</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '434%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_D_III_5" model="account.financial.html.report.line">
+          <field name="name">5. Trade payables - domestic</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_D_III"/>
+          <field name="code">RS_0456</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="5"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '435%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_D_III_6" model="account.financial.html.report.line">
+          <field name="name">6. Trade payables - foreign</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_D_III"/>
+          <field name="code">RS_0457</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="6"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '436%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_D_III_7" model="account.financial.html.report.line">
+          <field name="name">7. Other operating liabilities</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_D_III"/>
+          <field name="code">RS_0458</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="7"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '439%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_D_IV" model="account.financial.html.report.line">
+          <field name="name">IV. Other short-term liabilities</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_D"/>
+          <field name="code">RS_0459</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="['|', ('account_id.code', '=like', '44%'),'|', ('account_id.code', '=like', '45%'), ('account_id.code', '=like', '46%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_D_V" model="account.financial.html.report.line">
+          <field name="name">V. Liabilities for value added tax</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_D"/>
+          <field name="code">RS_0460</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="5"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '47%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_D_VI" model="account.financial.html.report.line">
+          <field name="name">VI. Liabilities for other taxes, contributions and other duties</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_D"/>
+          <field name="code">RS_0461</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="6"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '48%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_D_VII" model="account.financial.html.report.line">
+          <field name="name">VII. Deferred expenses</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities_D"/>
+          <field name="code">RS_0462</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="7"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '49%'), '!', ('account_id.code', '=like', '498%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_equity_liabilities_E" model="account.financial.html.report.line">
+          <field name="name">E. Loss above equity (A.III + A.VII + A.X - A.IX - A.VIII - A.VI - A.V - A.IV - A.II - A.I)</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_equity_liabilities"/>
+          <field name="code">RS_0463</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="5"/>
+          <field name="formulas">max((RS_0412 + RS_0416 + RS_0421) - (RS_0402 + RS_0411 + RS_0413 + RS_0414 + RS_0415 + RS_0417 + RS_0420), 0)</field>
+     </record>
+
+     <record id="account_financial_report_rs_BS_off_balance" model="account.financial.html.report.line">
+          <field name="name">Off-balance items</field>
+          <field name="financial_report_id" ref="account_financial_report_rs_BS"/>
+          <field name="level" eval="0"/>
+          <field name="sequence" eval="3"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_off_balance_A" model="account.financial.html.report.line">
+          <field name="name">A. Off-balance sheet assets</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_off_balance"/>
+          <field name="code">RS_0072</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '88%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_BS_off_balance_B" model="account.financial.html.report.line">
+          <field name="name">B. Off-balance sheet liabilities</field>
+          <field name="parent_id" ref="account_financial_report_rs_BS_off_balance"/>
+          <field name="code">RS_0465</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code', '=like', '89%')]"/>
+     </record>
+
+</odoo>

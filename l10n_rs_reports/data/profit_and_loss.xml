@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <record id="account_financial_report_rs_PnL" model="account.financial.html.report">
+          <field name="name">Profit and Loss</field>
+          <field name="unfold_all_filter" eval="True"/>
+          <field name="parent_id" ref="l10n_rs.account_reports_rs_statements_menu"/>
+          <field name="show_journal_filter" eval="True"/>
+          <field name="country_id" ref="base.rs"/>
+     </record>
+
+     <record id="action_account_report_rs_PnL" model="ir.actions.client">
+          <field name="name">Profit and Loss</field>
+          <field name="tag">account_report</field>
+          <field name="context" eval="{'model': 'account.financial.html.report', 'id': ref('account_financial_report_rs_PnL')}"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_operating_result" model="account.financial.html.report.line">
+          <field name="name">Operating profit/loss (A - B)</field>
+          <field name="financial_report_id" ref="account_financial_report_rs_PnL"/>
+          <field name="code">RS_1030</field>
+          <field name="level" eval="0"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">RS_1001 - RS_1018</field>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_A" model="account.financial.html.report.line">
+          <field name="name">A. Operating income (I + II + III + IV)</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_operating_result"/>
+          <field name="code">RS_1001</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">RS_1002 + RS_1009 + RS_1016 + RS_1017</field>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_A_I" model="account.financial.html.report.line">
+          <field name="name">I. Income from goods sold</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_A"/>
+          <field name="code">RS_1002</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">RS_1003 + RS_1004 + RS_1005 + RS_1006 + RS_1007 + RS_1008</field>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_A_I_1" model="account.financial.html.report.line">
+          <field name="name">1. Goods sold to domestic parent companies and subsidiaries</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_A_I"/>
+          <field name="code">RS_1003</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code','=like','600%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_A_I_2" model="account.financial.html.report.line">
+          <field name="name">2. Goods sold to foreign parent companies and subsidiaries</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_A_I"/>
+          <field name="code">RS_1004</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code','=like','601%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_A_I_3" model="account.financial.html.report.line">
+          <field name="name">3. Goods sold to other associated companies on the domestic market</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_A_I"/>
+          <field name="code">RS_1005</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code','=like','602%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_A_I_4" model="account.financial.html.report.line">
+          <field name="name">4. Goods sold to other associated companies on the foreign market</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_A_I"/>
+          <field name="code">RS_1006</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code','=like','603%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_A_I_5" model="account.financial.html.report.line">
+          <field name="name">5. Goods sold to domestic customers</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_A_I"/>
+          <field name="code">RS_1007</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="5"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code','=like','604%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_A_I_6" model="account.financial.html.report.line">
+          <field name="name">6. Goods sold to foreign customers</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_A_I"/>
+          <field name="code">RS_1008</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="6"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code','=like','605%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_A_II" model="account.financial.html.report.line">
+          <field name="name">II. Income from products sold and services provided</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_A"/>
+          <field name="code">RS_1009</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">RS_1010 + RS_1011 + RS_1012 + RS_1013 + RS_1014 + RS_1015</field>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_A_II_1" model="account.financial.html.report.line">
+          <field name="name">1. Products sold and services provided to domestic parent companies and subsidiaries</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_A_II"/>
+          <field name="code">RS_1010</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code','=like','610%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_A_II_2" model="account.financial.html.report.line">
+          <field name="name">2. Products sold and services provided to foreign parent companies and subsidiaries</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_A_II"/>
+          <field name="code">RS_1011</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code','=like','611%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_A_II_3" model="account.financial.html.report.line">
+          <field name="name">3. Products sold and services provided to other associated companies on the domestic market</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_A_II"/>
+          <field name="code">RS_1012</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code','=like','612%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_A_II_4" model="account.financial.html.report.line">
+          <field name="name">4. Products sold and services provided to other associated companies on the foreign market</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_A_II"/>
+          <field name="code">RS_1013</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code','=like','613%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_A_II_5" model="account.financial.html.report.line">
+          <field name="name">5. Products sold and services provided to domestic customers</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_A_II"/>
+          <field name="code">RS_1014</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="5"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code','=like','614%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_A_II_6" model="account.financial.html.report.line">
+          <field name="name">6. Products sold and services provided to foreign customers</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_A_II"/>
+          <field name="code">RS_1015</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="6"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code','=like','615%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_A_III" model="account.financial.html.report.line">
+          <field name="name">III. Income from premiums, subsidies, grants, donations and similar</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_A"/>
+          <field name="code">RS_1016</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code','=like','64%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_A_IV" model="account.financial.html.report.line">
+          <field name="name">IV. Other operating income</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_A"/>
+          <field name="code">RS_1017</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code','=like','65%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_B" model="account.financial.html.report.line">
+          <field name="name">B. Operating expenses (I - II - III + IV + V + VI + VII + VIII + IX + X + XI)</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_operating_result"/>
+          <field name="code">RS_1018</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">RS_1019 - RS_1020 - RS_1021 + RS_1022 + RS_1023 + RS_1024 + RS_1025 + RS_1026 + RS_1027 + RS_1028 + RS_1029</field>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_B_I" model="account.financial.html.report.line">
+          <field name="name">I. Cost of goods sold</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_B"/>
+          <field name="code">RS_1019</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code','=like','50%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_B_II" model="account.financial.html.report.line">
+          <field name="name">II. Revenue from undertaking for own purposes</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_B"/>
+          <field name="code">RS_1020</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code','=like','62%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_B_III" model="account.financial.html.report.line">
+          <field name="name">III. Increase in inventories of work in progress and finished products and unfinished services</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_B"/>
+          <field name="code">RS_1021</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code','=like','630%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_B_IV" model="account.financial.html.report.line">
+          <field name="name">IV. Decrease in inventories of work in progress and finished products and unfinished services</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_B"/>
+          <field name="code">RS_1022</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code','=like','631%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_B_V" model="account.financial.html.report.line">
+          <field name="name">V. Raw material costs</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_B"/>
+          <field name="code">RS_1023</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="5"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code','=like','51%'), '!', ('account_id.code','=like','513%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_B_VI" model="account.financial.html.report.line">
+          <field name="name">VI. Fuel and energy costs</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_B"/>
+          <field name="code">RS_1024</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="6"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code','=like','513%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_B_VII" model="account.financial.html.report.line">
+          <field name="name">VII. Salaries, wages and other personal indemnities</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_B"/>
+          <field name="code">RS_1025</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="7"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code','=like','52%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_B_VIII" model="account.financial.html.report.line">
+          <field name="name">VIII. Production services costs</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_B"/>
+          <field name="code">RS_1026</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="8"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code','=like','53%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_B_IX" model="account.financial.html.report.line">
+          <field name="name">IX. Depreciation costs</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_B"/>
+          <field name="code">RS_1027</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="9"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code','=like','540%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_B_X" model="account.financial.html.report.line">
+          <field name="name">X. Long-term provision costs</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_B"/>
+          <field name="code">RS_1028</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="10"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code','=like','54%'), '!', ('account_id.code','=like','540%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_B_XI" model="account.financial.html.report.line">
+          <field name="name">XI. Intangible costs</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_B"/>
+          <field name="code">RS_1029</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="11"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code','=like','55%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_financial_result" model="account.financial.html.report.line">
+          <field name="name">Profit from financing (C - D)</field>
+          <field name="financial_report_id" ref="account_financial_report_rs_PnL"/>
+          <field name="code">RS_1048</field>
+          <field name="level" eval="0"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">RS_1032 - RS_1040</field>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_C" model="account.financial.html.report.line">
+          <field name="name">C. Financial income (I + II + III)</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_financial_result"/>
+          <field name="code">RS_1032</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">RS_1033 + RS_1038 + RS_1039</field>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_C_I" model="account.financial.html.report.line">
+          <field name="name">I. Financial income from associated companies and other financial income (1034 + 1035 + 1036 + 1037)</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_C"/>
+          <field name="code">RS_1033</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">RS_1034 + RS_1035 + RS_1036 + RS_1037</field>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_C_I_1" model="account.financial.html.report.line">
+          <field name="name">1. Financial income from parent company and subsidiaries</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_C_I"/>
+          <field name="code">RS_1034</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code','=like','660%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_C_I_2" model="account.financial.html.report.line">
+          <field name="name">2. Financial income from other associated companies</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_C_I"/>
+          <field name="code">RS_1035</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code','=like','661%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_C_I_3" model="account.financial.html.report.line">
+          <field name="name">3. Share in the profits of associated companies and joint ventures</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_C_I"/>
+          <field name="code">RS_1036</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code','=like','665%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_C_I_4" model="account.financial.html.report.line">
+          <field name="name">4. Other financial income</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_C_I"/>
+          <field name="code">RS_1037</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code','=like','669%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_C_II" model="account.financial.html.report.line">
+          <field name="name">II. Income from interest (from third parties)</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_C"/>
+          <field name="code">RS_1038</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code','=like','662%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_C_III" model="account.financial.html.report.line">
+          <field name="name">III. Positive effects on exchange rate and effects of foreign currency clause (to third parties)</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_C"/>
+          <field name="code">RS_1039</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="['|', ('account_id.code','=like','663%'), ('account_id.code','=like','664%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_D" model="account.financial.html.report.line">
+          <field name="name">D. Financial expenses (I + II + III)</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_financial_result"/>
+          <field name="code">RS_1040</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">RS_1041 + RS_1046 + RS_1047</field>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_D_I" model="account.financial.html.report.line">
+          <field name="name">I. Financial expenses incurred with associated companies and other financial expenses (1042 + 1043 + 1044 + 1045)</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_D"/>
+          <field name="code">RS_1041</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">RS_1042 + RS_1043 + RS_1044 + RS_1045</field>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_D_I_1" model="account.financial.html.report.line">
+          <field name="name">1. Financial expenses incurred with parent company and subsidiaries</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_D_I"/>
+          <field name="code">RS_1042</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code','=like','560%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_D_I_2" model="account.financial.html.report.line">
+          <field name="name">2. Financial expenses incurred with other associated companies</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_D_I"/>
+          <field name="code">RS_1043</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code','=like','561%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_D_I_3" model="account.financial.html.report.line">
+          <field name="name">3. Share in losses of associated companies and joint ventures</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_D_I"/>
+          <field name="code">RS_1044</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code','=like','565%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_D_I_4" model="account.financial.html.report.line">
+          <field name="name">4. Other financial expenses</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_D_I"/>
+          <field name="code">RS_1045</field>
+          <field name="level" eval="3"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="['|', ('account_id.code','=like','566%'), ('account_id.code','=like','569%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_D_II" model="account.financial.html.report.line">
+          <field name="name">II. Interest expenses (to third parties)</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_D"/>
+          <field name="code">RS_1046</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code','=like','562%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_D_III" model="account.financial.html.report.line">
+          <field name="name">III. Negative effects on exchange rate and effects of foreign currency clause (to third parties)</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_D"/>
+          <field name="code">RS_1047</field>
+          <field name="level" eval="2"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="['|', ('account_id.code','=like','563%'), ('account_id.code','=like','564%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_other_result" model="account.financial.html.report.line">
+          <field name="name">Profit from other regular operations and irregular operations (E - F + G - H + I - J)</field>
+          <field name="financial_report_id" ref="account_financial_report_rs_PnL"/>
+          <field name="code">RS_other_result</field>
+          <field name="level" eval="0"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">RS_1050 - RS_1051 + RS_1052 - RS_1053 + RS_1056 - RS_1057</field>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_E" model="account.financial.html.report.line">
+          <field name="name">E. Income on value adjustment of other assets carried at fair value through profit and loss account</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_other_result"/>
+          <field name="code">RS_1050</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="['|', ('account_id.code','=like','683%'), ('account_id.code','=like','685%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_F" model="account.financial.html.report.line">
+          <field name="name">F. Expenses on value adjustment of other assets carried at fair value through profit and loss account</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_other_result"/>
+          <field name="code">RS_1051</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="['|', ('account_id.code','=like','583%'), ('account_id.code','=like','585%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_G" model="account.financial.html.report.line">
+          <field name="name">G. Other income</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_other_result"/>
+          <field name="code">RS_1052</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="['!','|', ('account_id.code','=like','683%') , ('account_id.code','=like','685%'),'|',('account_id.code','=like','67%') , ('account_id.code','=like','68%') ]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_H" model="account.financial.html.report.line">
+          <field name="name">H. Other expenses</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_other_result"/>
+          <field name="code">RS_1053</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="['!','|', ('account_id.code','=like','583%') , ('account_id.code','=like','585%'),'|',('account_id.code','=like','57%') , ('account_id.code','=like','58%') ]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_I" model="account.financial.html.report.line">
+          <field name="name">I. Net profit from discontinued operations, effects of changes in accounting policies and corrections of errors from previous periods</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_other_result"/>
+          <field name="code">RS_1056</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="5"/>
+          <field name="formulas">-sum_if_neg</field>
+          <field name="domain" eval="['|', ('account_id.code','=like','69%'), ('account_id.code','=like','59%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_J" model="account.financial.html.report.line">
+          <field name="name">J. Net loss from discontinued operations, effects of changes in accounting policies and corrections of errors from previous periods</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_other_result"/>
+          <field name="code">RS_1057</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="6"/>
+          <field name="formulas">sum_if_pos</field>
+          <field name="domain" eval="['|', ('account_id.code','=like','69%'), ('account_id.code','=like','59%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_results_before_tax" model="account.financial.html.report.line">
+          <field name="name">Profit before tax (Operating + Financing + Other regular and Irregular operations)</field>
+          <field name="financial_report_id" ref="account_financial_report_rs_PnL"/>
+          <field name="code">RS_1058</field>
+          <field name="level" eval="0"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">RS_1030 + RS_1048 + RS_other_result</field>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_tax_profit" model="account.financial.html.report.line">
+          <field name="name">Tax on profit (I + II - III + IV)</field>
+          <field name="financial_report_id" ref="account_financial_report_rs_PnL"/>
+          <field name="code">RS_tax_profit</field>
+          <field name="level" eval="0"/>
+          <field name="sequence" eval="5"/>
+          <field name="formulas">RS_1060 + RS_1061 - RS_1062 + RS_1063</field>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_tax_profit_I" model="account.financial.html.report.line">
+          <field name="name">I. Tax expenses for the period</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_tax_profit"/>
+          <field name="code">RS_1060</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="1"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code','=like','721%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_tax_profit_II" model="account.financial.html.report.line">
+          <field name="name">II. Deferred tax expenses of a period</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_tax_profit"/>
+          <field name="code">RS_1061</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="2"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code','=like','7220%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_tax_profit_III" model="account.financial.html.report.line">
+          <field name="name">III. Deferred tax income of a period</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_tax_profit"/>
+          <field name="code">RS_1062</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="3"/>
+          <field name="formulas">-sum</field>
+          <field name="domain" eval="[('account_id.code','=like','7221%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_tax_profit_IV" model="account.financial.html.report.line">
+          <field name="name">IV. Personal indemnities paid to employer</field>
+          <field name="parent_id" ref="account_financial_report_rs_PnL_tax_profit"/>
+          <field name="code">RS_1063</field>
+          <field name="level" eval="1"/>
+          <field name="sequence" eval="4"/>
+          <field name="formulas">sum</field>
+          <field name="domain" eval="[('account_id.code','=like','723%')]"/>
+     </record>
+
+     <record id="account_financial_report_rs_PnL_P" model="account.financial.html.report.line">
+          <field name="name">P. Net profit/loss (profit before tax - tax on profit)</field>
+          <field name="financial_report_id" ref="account_financial_report_rs_PnL"/>
+          <field name="code">RS_1064</field>
+          <field name="level" eval="0"/>
+          <field name="sequence" eval="16"/>
+          <field name="formulas">RS_1058 - RS_tax_profit</field>
+     </record>
+
+</odoo>

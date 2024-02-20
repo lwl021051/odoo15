@@ -1,0 +1,363 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_amazon_spapi
+# 
+# Translators:
+# Ikhsanul Wirsa <iwirsa02@outlook.co.id>, 2022
+# Abdul Munif Hanafi <amunifhanafi@gmail.com>, 2022
+# Ryanto The <ry.the77@gmail.com>, 2022
+# Abe Manyo, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-06 12:46+0000\n"
+"PO-Revision-Date: 2022-06-10 15:35+0000\n"
+"Last-Translator: Abe Manyo, 2023\n"
+"Language-Team: Indonesian (https://app.transifex.com/odoo/teams/41243/id/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: id\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__aws_access_key
+msgid "AWS Access Key"
+msgstr "Kunci Akses AWS"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__aws_secret_key
+msgid "AWS Secret Key"
+msgstr "Kunci Rahasia AWS"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__aws_session_token
+msgid "AWS Session Token"
+msgstr "Token Sesi AWS"
+
+#. module: sale_amazon_spapi
+#: model:ir.model,name:sale_amazon_spapi.model_amazon_account
+msgid "Amazon Account"
+msgstr "Akun Amazon"
+
+#. module: sale_amazon_spapi
+#: model:ir.model,name:sale_amazon_spapi.model_amazon_marketplace
+msgid "Amazon Marketplace"
+msgstr "Marketplace Amazon"
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.authorization_error
+msgid "An error occurred"
+msgstr "Terjadi eror"
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.authorization_error
+msgid "An error occurred while linking your account with Amazon."
+msgstr "Error terjadi saat menghubungkan akun Anda dengan Amazon."
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__auth_token
+msgid "Authorization Token"
+msgstr ""
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.authorization_error
+msgid "Back to my account"
+msgstr "Kembali ke akun saya"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_marketplace__code
+msgid "Code"
+msgstr "Kode"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid "Could not establish the connection to the API."
+msgstr "Tidak dapat membuat hubungan ke API."
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid "Could not establish the connection to the feed URL."
+msgstr "Tidak dapat membuat hubungan ke URL feed."
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid "Could not establish the connection to the proxy."
+msgstr "Tidak dapat membuat hubungan ke proxy."
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/controllers/onboarding.py:0
+#, python-format
+msgid "Could not find Amazon account with id %s"
+msgstr "Tidak dapat menemukan akun Amazon dengan id %s"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_marketplace__domain
+msgid "Domain"
+msgstr "Ruang Lingkup"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid "Error code: %s; description: %s"
+msgstr "Kode error: %s; deskripsi: %s"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields.selection,name:sale_amazon_spapi.selection__amazon_marketplace__region__eu-west-1
+msgid "Europe"
+msgstr "Eropa"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields.selection,name:sale_amazon_spapi.selection__amazon_marketplace__region__us-west-2
+msgid "Far East"
+msgstr "Timur Jauh"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/models/amazon_account.py:0
+#, python-format
+msgid ""
+"Gift message:\n"
+"%s"
+msgstr ""
+"Pesan hadiah:\n"
+"%s"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__access_token
+msgid "LWA Access Token"
+msgstr "Token Akses LWA"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__refresh_token
+msgid "LWA Refresh Token"
+msgstr "Token Refresh LWA"
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.amazon_account_view_form_inherit
+msgid "Link with Amazon"
+msgstr "Link dengan Amazon"
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.amazon_account_view_form_inherit
+msgid ""
+"Link your Amazon account with Odoo to start synchronizing your Amazon "
+"orders."
+msgstr ""
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields.selection,name:sale_amazon_spapi.selection__amazon_marketplace__region__us-east-1
+msgid "North America"
+msgstr "Amerika Utara"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_marketplace__region
+msgid "Region"
+msgstr "Wilayah"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__restricted_data_token
+msgid "Restricted Data Token"
+msgstr "Token Data Terbatas"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_marketplace__seller_central_url
+msgid "Seller Central URL"
+msgstr "URL Seller Central "
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__seller_key
+msgid "Seller ID"
+msgstr ""
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/models/amazon_account.py:0
+#, python-format
+msgid "Successfully updated the marketplaces available to this account!"
+msgstr "Sukses mengupdate marketplace yang tersedia untuk akun inI!"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_marketplace__region
+msgid ""
+"The Amazon region of the marketplace. Please refer to the Selling Partner "
+"API documentation to find the correct region."
+msgstr ""
+"Daerah Amazon untuk marketplace tersebut. Mohon merujuk ke dokumentasi "
+"Selling Partner API untuk menemukan daerah yang tepat."
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__auth_token
+msgid ""
+"The MWS Authorization Token of the Amazon Seller Central account for Odoo"
+msgstr ""
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__seller_key
+msgid "The Merchant ID of the Amazon Seller Central account"
+msgstr ""
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_marketplace__seller_central_url
+msgid "The Seller Central URL"
+msgstr ""
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid "The communication with the API failed."
+msgstr "Komunikasi dengan API gagal."
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid ""
+"The communication with the API failed.\n"
+"Error code: %s; description: %s"
+msgstr ""
+"Komunikasi dengan API gagal.\n"
+"Kode error: %s; deskripsi: %s"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_marketplace__code
+msgid "The country code in ISO 3166-1 format"
+msgstr ""
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_marketplace__domain
+msgid "The domain name associated with the marketplace"
+msgstr ""
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__refresh_token
+msgid "The long-lived token that can be exchanged for a new access token."
+msgstr "Token panjang umur yang dapat ditukar untuk token akses baru."
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__aws_credentials_expiry
+msgid "The moment at which the AWS credentials become invalid."
+msgstr "Saat di mana credential AWS menjadi tidak valid."
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__restricted_data_token_expiry
+msgid "The moment at which the Restricted Data Token becomes invalid."
+msgstr "Saat di mana Token Data Terbatas menjadi tidak valid."
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,field_description:sale_amazon_spapi.field_amazon_account__access_token_expiry
+msgid "The moment at which the token becomes invalid."
+msgstr "Saat di mana token menjadi tidak valid."
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__aws_access_key
+msgid "The short-lived key used to identify the assumed ARN role on AWS."
+msgstr ""
+"Kunci jangka pendek yang digunakan untuk mengidentifikasi peran ARN yang "
+"diasumsikan pada AWS."
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__aws_secret_key
+msgid ""
+"The short-lived key used to verify the access to the assumed ARN role on "
+"AWS."
+msgstr ""
+"Kunci jangka-pendek yang digunakan untuk memverifikasi akses ke peran ARN "
+"yang diasumsikan pada AWS."
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__restricted_data_token
+msgid ""
+"The short-lived token used instead of the LWA Access Token to access "
+"restricted data"
+msgstr ""
+"Token jangka-pendek yang digunakan alih-alih Token Akses LWA untuk mengakses"
+" data terbatas"
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__access_token
+msgid "The short-lived token used to query Amazon API on behalf of a seller."
+msgstr ""
+"Token jangka-pendek yang digunakan untuk menanyakan Amazon API atas nama "
+"seller."
+
+#. module: sale_amazon_spapi
+#: model:ir.model.fields,help:sale_amazon_spapi.field_amazon_account__aws_session_token
+msgid ""
+"The short-lived token used to query the SP-API with the assumed ARN role on "
+"AWS."
+msgstr ""
+"Token jangka-pendek yang digunakan untuk menanyakan SP-API dengan peran ARN "
+"yang diasumsikan pada AWS."
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.amazon_account_view_form_inherit
+msgid ""
+"This action will disconnect your account with Amazon and cannot be"
+"                                  undone. Are you sure you want to proceed?"
+msgstr ""
+
+#. module: sale_amazon_spapi
+#: model:ir.model,name:sale_amazon_spapi.model_stock_picking
+msgid "Transfer"
+msgstr "Transfer"
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.amazon_account_view_form_inherit
+msgid "Unlink account"
+msgstr "Unlink akun"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid "You first need to authorize the Amazon account %s."
+msgstr "Anda harus terlebih dahulu mengotorisasi akun Amazon %s."
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/utils.py:0
+#, python-format
+msgid ""
+"You first need to set the marketplaces to synchronize for the Amazon account"
+" %s."
+msgstr ""
+"Anda harus terlebih dahulu menetapkan marketplace untuk disinkronisasi untuk"
+" akun Amazon %s."
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/models/amazon_account.py:0
+#, python-format
+msgid ""
+"You reached the maximum number of requests for this operation; please try "
+"again later."
+msgstr ""
+"Anda mencapai jumlah maksimum permintaan untuk operasi ini; silakan coba "
+"lagi nanti."
+
+#. module: sale_amazon_spapi
+#: model_terms:ir.ui.view,arch_db:sale_amazon_spapi.amazon_account_view_form_inherit
+msgid "Your Amazon account is linked with Odoo."
+msgstr "Akun Amazon Anda di-link dengan Odoo."
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/models/amazon_account.py:0
+#, python-format
+msgid ""
+"[%s] %s\n"
+"Condition: %s - %s"
+msgstr ""
+"[%s] %s\n"
+"Kondisi: %s - %s"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/models/amazon_account.py:0
+#, python-format
+msgid "[%s] Delivery Charges for %s"
+msgstr "[%s] Ongkos Pengiriman untuk %s"
+
+#. module: sale_amazon_spapi
+#: code:addons/sale_amazon_spapi/models/amazon_account.py:0
+#, python-format
+msgid "[%s] Gift Wrapping Charges for %s"
+msgstr "[%s] Ongkos Membukus Kado untuk %s"
